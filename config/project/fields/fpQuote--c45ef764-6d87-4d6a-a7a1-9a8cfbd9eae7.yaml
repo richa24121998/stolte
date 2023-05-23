@@ -1,0 +1,27 @@
+columnSuffix: qieksews
+contentColumnType: text
+fieldGroup: a0644ef7-a1d8-4320-89f4-de089d9c7dbf # Funding Priorities
+handle: fpQuote
+instructions: null
+name: 'Funding Priorities Quote'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

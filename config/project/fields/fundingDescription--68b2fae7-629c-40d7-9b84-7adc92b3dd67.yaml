@@ -1,0 +1,27 @@
+columnSuffix: khfabzmq
+contentColumnType: text
+fieldGroup: 89e4f9a8-97f1-495f-a843-fabadbfc6a6c # Funding Pillars
+handle: fundingDescription
+instructions: null
+name: 'Funding Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

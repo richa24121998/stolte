@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+handle: homepage
+name: Homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
+    enabledByDefault: true
+    hasUrls: true
+    template: sections/section-home.twig
+    uriFormat: __home__
+type: single

@@ -1,0 +1,57 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
+handle: fundingPriorities
+instructions: ''
+name: 'Funding Priorities'
+searchable: true
+settings:
+  multi: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Education & Early Learning'
+        -
+          - value
+          - educationEarlyLearning
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Climate & Clean Energy'
+        -
+          - value
+          - climateCleanEnergy
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Advocacy & Engagement'
+        -
+          - value
+          - advocacyEngagement
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Other
+        -
+          - value
+          - other
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

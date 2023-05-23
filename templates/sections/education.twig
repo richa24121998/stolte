@@ -1,0 +1,53 @@
+{% for tentry in craft.entries.section('fundingPrioritiesQuotes').limit(3).showOnPage('education').all() %}
+<!-- Frame Section -->
+<div class="frame-section custom-container">
+        <div class="widget">
+            <div class="widget-frame orange">
+                <h6>{{tentry.fpImageQuote}}</h6>
+                <p>—{{tentry.fpQuoteAuthor}}</p>
+            </div>
+            <div class="widget-frame-details">
+            {{tentry.fpQuoteDescription}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="main-section">
+        <h2 class="our-funding-title orange">OUR FUNDING PRIORITIES</h2>
+        <div class="main-content custom-container">
+        {% for tentry in craft.entries.section('fundingPriorities').limit(3).showOnPage('education').all() %}        
+            <!-- Home Visiting -->
+            <div class="widget">
+                <div class="widget-img">
+                    
+                {% if tentry.fpImage is not null %}
+                            {% set image = tentry.fpImage.one() %}
+                            {% if image %}
+                                <img src="{{ image.getUrl('w1000') }}" alt="{{ image.title }}">
+                            {% endif %}
+                        {% endif %}
+                </div>
+                <div class="widget-content">
+                    <h3 class="widget-title">
+                        <span>{{tentry.fpTitle}}</span>
+                    </h3>
+                    <p>
+                    {{tentry.fpQuote}}
+                    </p>
+                    <div class="widget-details">
+                    {{tentry.fpDescription}}
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Grants by Invitation Only Text-->
+            {% endfor %}
+            <button class="common-btn light-orange-btn">
+                GET TO KNOW OUR EDUCATION GRANTEE PARTNERS <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+        </div>
+    </div>

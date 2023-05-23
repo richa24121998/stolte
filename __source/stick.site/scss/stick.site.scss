@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+//VARIABLES
+@import "variables/variables.scss";
+
+//SITE
+@import "structural/site.scss";
+@import "structural/mobile_nav.scss";
+@import "structural/header.scss";
+@import "structural/top-image.scss";
+@import "structural/footer.scss";
+@import "structural/popup.scss";
+
+@import "snippets/quotes.scss";
+@import "snippets/pillars.scss";
+@import "snippets/grantees.scss";
+
+@import "sections/section_generic.scss";
+@import "libraries/swiper.scss";
+
+@import "structural/slider.scss";
+

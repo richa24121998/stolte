@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: quotes
+name: Quotes
+propagationMethod: all
+siteSettings:
+  665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: c62e2472-0bc5-4c2b-af56-70fc75d01c40
+type: structure

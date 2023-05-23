@@ -1,0 +1,100 @@
+$mobilenav_w:250px;
+$mobilenav_bg_off:#fff;
+$mobilenav_bg_on:$lightgreen;
+$mobilenav_font_off:$orange;
+$mobilenav_font_on:#fff;
+#mobile_nav {display:none;}
+
+@media only screen and (max-width: $mobile_nav_breakpoint) {
+    .lineli,
+    #header .site-menu {
+		display:none;
+	}
+	#mobile_nav {
+		display:block;
+		position:fixed;
+		width:70px;
+		height:50px;
+		z-index:5000;
+		top:0;
+		right:0;
+
+	}
+	#mobile_nav_inner {
+		padding:5px;
+	}
+	#mobile_nav_hamburger {
+		display:block;
+		position:absolute;
+		top:3px;
+		right:5px;
+		z-index:2;
+	}
+	.hamburger-inner,
+	.hamburger-inner::after,
+	.hamburger-inner::before {
+		background-color:$maincolor;
+	}
+	.is-active .hamburger-inner,
+	.is-active .hamburger-inner::after,
+	.is-active .hamburger-inner::before {
+		background-color:#000;
+	}
+
+	#mobile_nav_overlay {
+		background-color:$mobilenav_bg_off;
+		width:$mobilenav_w;
+		position:absolute;
+		top:0;
+		left:-180px;
+		@include transition_all();
+        border-left:2px solid #000;
+        border-bottom:2px solid #000;
+	}
+	#mobile_nav_overlay.hidden {
+		left:70px;
+	}
+
+	#mobile_nav_overlay ul {
+		margin-top:52px;
+
+	}
+	#mobile_nav_overlay li {
+		border-top:1px solid #000;
+		list-style: none;
+		background-color:$mobilenav_bg_off;
+		color:$mobilenav_font_off;
+		font-family: 'Conv_Berthold Akzidenz Grotesk Bold',sans-serif;
+		font-size:20px;
+		@include transition_color();
+	}
+	#mobile_nav_overlay a,
+	#mobile_nav_overlay span {
+		text-decoration: none;
+		cursor:pointer;
+        display: block;
+        font-size:18px;
+        padding:10px 0px 8px 20px;
+        @include calc( width, '100% - 20px');
+	}
+	#mobile_nav_overlay li.active,
+	#mobile_nav_overlay li:hover {
+		background-color:$mobilenav_bg_on;
+		color:$mobilenav_font_on;
+	}
+
+    #mobile_nav_overlay ul ul {
+      margin:0px 0 0 0;
+      padding:0;
+      a {
+        left:15px;
+        font-size:15px;
+        padding:7px 0px 5px 20px;
+      }
+      li:hover {
+        background-color:$lightgreen;
+        color:$mobilenav_font_on;
+
+      }
+    }
+}

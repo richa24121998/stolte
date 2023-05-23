@@ -1,0 +1,30 @@
+{% set quoteIndex = 0 %}
+{% set quotes = craft.entries.section('quotes').orderBy('RAND()') %}
+{% if (quotes|length>0) %}
+<div class="quotes-outer">
+    <div class="quotes inner-padder-4x">
+        <div class="quote-holder">
+            {% for tentry in quotes.all() %}
+                <div class="quote-left"></div>
+                <div class="quote-right"></div>
+                <div class="quote clearfix quote{{ quoteIndex}}" index="{{ quoteIndex }}">
+                    <div class="quote-copy">
+                        {{tentry.quote}}
+                    </div>
+                    <div class="quote-attribution">
+                        &#8212; {{tentry.quoteAttribution}}
+                    </div>
+                </div>
+                {% set quoteIndex = quoteIndex + 1 %}
+            {% endfor %}
+        </div>
+        <div class="circles">
+            {% set quoteIndex = 0 %}
+            {% for tentry in quotes.all() %}
+                <div class="circle circle{{ quoteIndex }}" index="{{ quoteIndex }}"></div>
+                {% set quoteIndex = quoteIndex + 1 %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

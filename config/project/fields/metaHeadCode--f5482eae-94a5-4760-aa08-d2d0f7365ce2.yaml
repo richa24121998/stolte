@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: ab97eced-2c66-43df-8866-f5604d148745 # Config
+handle: metaHeadCode
+instructions: 'JS, CSS, or analytics to paste in the meta header'
+name: 'Meta Head Code'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: text
+  initialRows: '10'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

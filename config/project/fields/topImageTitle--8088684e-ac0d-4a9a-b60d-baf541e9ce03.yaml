@@ -1,0 +1,19 @@
+columnSuffix: vkxfmjov
+contentColumnType: text
+fieldGroup: 94bbbb70-7d96-4817-a89d-e53b94c0db86 # Default
+handle: topImageTitle
+instructions: null
+name: 'Top Image Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

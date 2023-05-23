@@ -1,0 +1,91 @@
+fieldLayouts:
+  cfdba85b-dbf2-495b-856a-56164819533a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 85145cdb-72ab-4684-9d1d-bd57f16d7279
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b1d2e01a-d8b6-4170-93bb-a48166503c0c # Funding Priorities Image Quote 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f15f9ed8-f792-4345-ae00-c82564330377
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b13bfecb-6ca3-49a8-a021-e52a4934c2a1 # Funding Priorities Quote description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eafb585f-3168-404d-9f7d-97ee2487f472
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9e64d5fb-9362-47d2-8a6f-9d2d9306eb3a # Funding Priority Quote Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8103b59-c976-4243-99e3-1a087f53bf1e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b246f6f5-aae4-4ccf-8873-79fec03eb560 # Show on Page
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8dc234cd-8964-48ef-a9f3-9bdb2936f900
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a8cd12bb-5d24-40bb-a906-60767ed783b2
+        userCondition: null
+handle: fundingPrioritiesQuotes
+hasTitleField: true
+name: 'Funding Priorities Quotes'
+section: b1bbc7f0-4098-42ed-b29a-2104100ab004 # Funding Priorities Quotes
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

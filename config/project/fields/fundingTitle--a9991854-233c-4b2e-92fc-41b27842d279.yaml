@@ -1,0 +1,19 @@
+columnSuffix: aevpbkwi
+contentColumnType: text
+fieldGroup: 89e4f9a8-97f1-495f-a843-fabadbfc6a6c # Funding Pillars
+handle: fundingTitle
+instructions: null
+name: 'Funding Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,121 @@
+.navbar-menu .multilevel{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navbar-nav .icon-fa-chevron-down::after {
+    margin-left: 4px;
+    font-size: inherit;
+    font-family: FontAwesome;
+    content: "\f0d7"; /* Unicode for the chevron down icon */
+}
+
+.navbar-nav .nav-item:hover .icon-fa-chevron-down::after {
+    margin-left: 4px;
+    font-size: inherit;
+    font-family: FontAwesome;
+    content: "\f0d8"; /* Unicode for the chevron down icon */
+}
+
+.navbar-nav .nav-item ul {
+    visibility: hidden;
+    position: absolute;
+    --tw-bg-opacity: 1;
+    background-color: white;
+    opacity: 0;
+    padding: 0.75rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    z-index: 50;
+    width: 100%;
+  }
+  
+.navbar-nav .nav-item ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    --tw-text-opacity: 1;
+  }
+  
+.navbar-nav  .nav-item:hover ul {
+    visibility: visible;
+    --tw-text-opacity: 1;
+    opacity: 1;
+  }
+  
+.navbar-nav  .nav-item:hover ul a {
+   font-weight: 600;
+  }
+
+
+
+/* MOBILE MENU */
+
+.mobile-menu .navbar-menu .multilevel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .mobile-menu .navbar-menu .nav-link {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  
+  .mobile-menu .navbar-menu .nav-item ul {
+    margin-left: 1rem;
+  }
+  .mobile-menu .navbar-menu .nav-item ul li{
+    padding-top: 0.5rem;
+    color: white !important;
+  }
+
+
+  /* Footer */
+  @media (min-width: 1024px) {
+    footer {
+      height: max(35vw,45rem);
+      background-image: url('../../site/images/footer/bg_footer.png') !important;
+    }
+  }
+
+  .f-menu .f-ttl{
+    align-items: flex-start;
+  }
+  .f-ttl img {
+    margin-top: 5px;
+    width: 24px;
+  }
+
+  .f-menu{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+  }
+
+  .f-menu .menu{
+  
+    min-height: 100%;
+  }
+  .f-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    text-transform: uppercase;
+  }
+
+.banner-section{
+    background-repeat: no-repeat !important;
+    min-height: 100%;
+}
+.banner-content .banner-title, .banner-content p{
+  color: #ffffff !important;
+}
+#content a:hover {
+  border-bottom: none !important;
+}

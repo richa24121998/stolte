@@ -1,0 +1,27 @@
+{% set menuData = craft.olivemenus.getMenuData('footerPillar') %}
+{% if menuData|length %}
+{% for entryData in menuData %}
+{% set entry = craft.entries().id(entryData.entry_id).one() %}
+{% if entry %}
+<div class="f-menu">
+	{% set color = entry.getFieldValue('fundingColor') ?? '#000' %}
+	<h6 class="f-ttl" style="color: {{ color }}">
+		{% set url = entry.fundingSmallIcon[0].getUrl() %}
+		<img src="{{ url }}" class="f-icons">
+		{{ entry.title }}
+	</h6>
+	<p>{{ entry.fundingLogline }}</p>
+	<a href="#" class="f-link " style="color: {{ color }}">Funding Priorities
+		<span class="f-arrow-icons">
+			<i class="fa-solid fa-arrow-right-long"></i>
+		</span>
+	</a>
+	<a href="#" class="f-link " style="color: {{ color }}">Grantee Partners
+		<span class="f-arrow-icons">
+			<i class="fa-solid fa-arrow-right-long"></i>
+		</span>
+	</a>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}

@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: smallint(4)
+fieldGroup: ab97eced-2c66-43df-8866-f5604d148745 # Config
+handle: mostRecentGrantYear
+instructions: 'The most recent grant year to display (ex: 2021, 2022, 2030, etc)'
+name: 'Most Recent Grant Year'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: null
+  max: 2040
+  min: 2007
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

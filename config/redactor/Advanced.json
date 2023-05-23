@@ -1,0 +1,7 @@
+{
+  "buttons": ["format","bold","italic","lists","link","file","horizontalrule","html"],
+  "formatting": ["p", "blockquote", "h2","h3","h4","h5","h6"],
+  "plugins": ["fullscreen", "table", "video","properties"],
+  "linkNewTab": true,
+  "toolbarFixed": true
+}

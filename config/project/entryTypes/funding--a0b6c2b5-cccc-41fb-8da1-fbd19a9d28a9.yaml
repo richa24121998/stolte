@@ -1,0 +1,141 @@
+fieldLayouts:
+  7a9a7aca-cc78-43c5-a12a-d207b9566e0a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13a02035-66f9-405f-a159-8663a011b5ae # Meta Description
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e4faeaa9-19a9-417a-a8b3-a379a7fb691e # Top Image
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 43d06bce-50fa-46b4-ae2c-12ce9d9e3f4d # Body
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5807f48b-748e-430a-9f2f-5bfb7041c14d # Grant Inquiry
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e39d73af-adca-4c0f-99e8-fe149328958b # Grant Inquiry Sub 
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8974cb14-350a-479b-bd4e-c05e9b206105 # RFP Archives
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d423fdfe-3dfa-4dfa-a0e7-c6dbb0e5d153 # RFP Archives Sub
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cb15365b-3b10-4537-957f-51b54752e5c7 # Bottom Body
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Default
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7d18af95-e4ac-4eea-b3a2-54bafedf107e # SEO Description
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 177874b1-a29f-42f6-b433-c9023f6c7cb8 # SEO Image
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6cfb5de5-8aaa-40f6-b1b6-9109ef77fa05 # SEO Title
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Social Media SEO'
+        sortOrder: 2
+handle: funding
+hasTitleField: true
+name: Funding
+section: c1b8ec59-6008-47b6-81cb-6bc28b045020 # Funding
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

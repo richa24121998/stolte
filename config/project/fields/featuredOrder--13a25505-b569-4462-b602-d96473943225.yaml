@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: integer(10)
+fieldGroup: c8433762-3bbd-435b-ba87-6993de142681 # News & Resources
+handle: featuredOrder
+instructions: 'This will affect the sort order.  1) First it sorts by this number (ascending), 2) then it sorts by post date (most recent first)'
+name: 'Featured Order'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

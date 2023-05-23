@@ -1,0 +1,21 @@
+{% set old_area = "-1" %}
+{% set counter = 1 %}
+{% for tentry in craft.entries.section('aboutList').all() %}
+    {% if old_area != tentry.area %}
+        {% set old_area = tentry.area %}
+        {% set counter = 1 %}
+        <h5 id="{{ tentry.area|lower }}">{{tentry.area|upper }}</h5>
+    {% endif %}
+    <div class="element clearfix {{ counter is odd ? 'odd' : 'even' }}">
+        <div class="element-full element_full-copy"><div class="element-full-inner">
+            <div class="element-half element_half-img">
+                <img src="{{tentry.image.one().getUrl('w1000')}}"/>
+                <div class="image-caption">
+                    {{tentry.imageOverlayTitle|upper|nl2br}}
+                </div>
+            </div>
+            {{tentry.description}}
+        </div></div>
+    </div>
+    {% set counter = counter + 1 %}
+{% endfor %}

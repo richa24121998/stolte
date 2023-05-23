@@ -1,0 +1,37 @@
+fieldLayouts:
+  d764c97a-56d9-44d7-9f7e-3b40323ec534:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 88822b05-f874-4ee1-a128-b2510596d9a6 # Grant Note
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2170e07f-d1a5-4537-a21a-c408aab920c5 # Most Recent Grant Year
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a3a4de4b-fc37-47e0-8ae8-e307eeec003e # Oldest Grant Year
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: siteConfig
+name: 'Site Config'
+sortOrder: 2

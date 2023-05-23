@@ -1,0 +1,15 @@
+{%  if
+        craft.app.request.getSegment(1) == "news-resources-all-news" or
+        craft.app.request.getSegment(1) == "news-resources-all-resources" or
+        craft.app.request.getSegment(1) == "news-resources-all-blogs" or
+        craft.app.request.getSegment(1) == "channel"
+
+    %}
+     <div class="breadcrumbs">
+        <a href="/news-resources">
+            <i class="material-icons">&#xE31B;</i> News & Resources
+        </a>
+    </div>
+
+{% endif %}
+

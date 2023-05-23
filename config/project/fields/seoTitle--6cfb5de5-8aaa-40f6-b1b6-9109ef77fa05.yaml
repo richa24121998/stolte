@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e80763fb-469b-4bda-bc61-60a9494e30b8 # Social Media SEO
+handle: seoTitle
+instructions: 'If not blank, this will override the meta title.'
+name: 'SEO Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: '60'
+  code: false
+  columnType: string
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

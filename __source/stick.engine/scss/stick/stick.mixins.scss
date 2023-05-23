@@ -1,0 +1,65 @@
+/********************************************************
+VARIABLES
+@include transition_hover();
+@include transition_all();
+@include calc( width, '100% - 32px');
+
+********************************************************/	
+
+@mixin transition_hover() {
+    -webkit-transition: opacity 350ms ease, color 350ms ease, background-color 350ms ease, box-shadow 350ms ease, border 350ms ease,width 350ms ease;
+    -moz-transition: opacity 350ms ease, color 350ms ease, background-color 350ms ease, box-shadow 350ms ease, border 350ms ease,width 350ms ease;
+    -o-transition: opacity 350ms ease, color 350ms ease, background-color 350ms ease, box-shadow 350ms ease, border 350ms ease,width 350ms ease;
+    transition: opacity 350ms ease, color 350ms ease, background-color 350ms ease, box-shadow 350ms ease, border 350ms ease,width 350ms ease;
+    
+}
+@mixin transition_color() {
+	-webkit-transition: color 350ms ease, background-color 350ms ease,border-color 350ms ease;
+    -moz-transition: color 350ms ease, background-color 350ms ease,border-color 350ms ease;
+   	-o-transition: color 350ms ease, background-color 350ms ease,border-color 350ms ease;
+    transition: color 350ms ease, background-color 350ms ease,border-color 350ms ease;
+}
+@mixin transition_all() {
+	-webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+   	-o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+//transition_type(left); no quotes
+@mixin transition_type($property) {
+	-webkit-transition: $property 350ms ease;
+    -moz-transition: $property 350ms ease;
+   	-o-transition: $property 350ms ease;
+    transition: $property 350ms ease;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+@mixin calc_important($property, $expression) {
+  #{$property}: -moz-calc(#{$expression})!important;
+  #{$property}: -webkit-calc(#{$expression})!important;
+  #{$property}: calc(#{$expression})!important;
+}
+@mixin pop_out_text() {
+ text-shadow: 0px 0px 20px #000;
+}
+@mixin pop_out_text_subtle() {
+ text-shadow: 0px 0px 40px rgba(0, 0, 0,0.75);
+}
+@mixin rotate_90cc() {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+@mixin rotate_360() {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
+}

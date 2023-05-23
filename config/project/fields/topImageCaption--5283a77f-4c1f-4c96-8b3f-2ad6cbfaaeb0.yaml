@@ -1,0 +1,27 @@
+columnSuffix: whjuezsf
+contentColumnType: text
+fieldGroup: 94bbbb70-7d96-4817-a89d-e53b94c0db86 # Default
+handle: topImageCaption
+instructions: null
+name: 'Top Image Caption'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

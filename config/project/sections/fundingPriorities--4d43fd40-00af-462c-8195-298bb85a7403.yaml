@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: fundingPriorities
+name: 'Funding Priorities '
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
+    enabledByDefault: true
+    hasUrls: true
+    template: funding-priorities/_entry
+    uriFormat: 'funding-priorities/{slug}'
+structure:
+  maxLevels: null
+  uid: 101fcc51-de9a-448e-8802-8b4461cd7800
+type: structure

@@ -1,0 +1,139 @@
+fieldLayouts:
+  7d87c7f3-5a7a-4bda-8e90-e378515cc467:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 20c6e2fe-8a78-4118-b88e-35fa8058a037
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: acfa48a6-b069-4c5f-84c7-5a1ea4ca6278 # Funding Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a28cbb4-cbbf-4f3f-bd29-f4cb60cfeeb5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1ce57a2b-80b1-4cf6-bd29-23922daf35d9 # Funding Image Caption
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e23c8fb-0f6a-403a-bf6d-68b8c9697e2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f6086c95-cc2b-4538-ad6c-cccb1f3748d4 # Funding Logline
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b1217a0-32cd-4d32-bcd2-8115fadd7545
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 32de164b-d614-48fb-900c-d9f840093b17 # Funding Body
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2ca0a2b-9515-476c-a664-929252655a7d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d3204f98-cfd8-48b7-891d-9575cab3d144 # Funding Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9e9da32-e9fd-4724-a083-e79faa7e63ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a9b3ccfe-33a9-4bf1-babb-4d3e3ab41e76 # Funding Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06bb21d9-1965-4f9a-8e67-7642231c22fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 701d9cd9-a54c-46a1-8a88-68ca6862523f # Funding Small Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3576ff55-7fd2-42f7-adc3-3850d9c150ef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f69fd89-e250-40f3-8558-ef505efbfd94 # Funding Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6fd26237-c69a-446d-9e64-a96ddef465c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Funding Pillars'
+        uid: c155eee4-a8b4-4813-9b83-84c958a7316d
+        userCondition: null
+handle: fundingPillars
+hasTitleField: false
+name: 'Funding Pillars'
+section: 9811cd28-3e43-4b3c-b879-00551d5fa3bc # Funding Pillars
+sortOrder: 1
+titleFormat: '{fundingImageCaption}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

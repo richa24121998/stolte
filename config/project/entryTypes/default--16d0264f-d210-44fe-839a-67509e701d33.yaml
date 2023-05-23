@@ -1,0 +1,43 @@
+fieldLayouts:
+  47f8f94c-4e26-4ef5-b521-0f644e6799be:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ae51be5a-163c-418f-a4b8-e5d13f43b1ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b23e00b4-eaa6-4e02-884b-1f4a38dd8848
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 6472ce06-df3d-44d5-b2e9-4f72a01add0a # Education
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

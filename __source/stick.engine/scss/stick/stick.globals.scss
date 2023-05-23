@@ -1,0 +1,118 @@
+/* clicker handle */
+.clicker_handle { 
+	cursor:pointer;
+}
+
+//use in floats
+.clearfix::after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+/* add this clas to kill a css transition in progress, then remove it again */
+.kill_css_transition { 
+	-webkit-transition: all 0ms ease!important;
+    -moz-transition: all 0ms ease!important;
+   	-o-transition: all 0ms ease!important;
+    transition: all 0ms ease!important;
+}
+
+//stop an element and its children from being selectable
+.noselect { 
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+//vertical align elements
+//usage <div class="div-table"><div class="div-tablecell">copy</div></div>
+.div-table { 
+	display:table;
+	height:100%;
+	width:100%;
+}
+.div-tablecell { 
+	display:table-cell;
+	vertical-align:middle;
+	height:100%;
+	width:100%;
+}
+
+//socicon specials
+.socicon { 
+	@include transition_hover();
+}
+.socicon, 
+.socicon:hover,  
+.socicon_a,  
+.socicon_a:hover { 
+	text-decoration:none;
+}
+
+
+//arrow triangles
+//<div class="arrow_triangle right"></div>
+.arrow_triangle {
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.arrow_triangle.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.arrow_triangle.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.arrow_triangle.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.arrow_triangle.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nowrap { 
+	white-space: nowrap;
+}
+
+//abs 00
+.abs00 {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

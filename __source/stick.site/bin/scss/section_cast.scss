@@ -1,0 +1,219 @@
+#cast_nav { 
+	position:absolute;
+}
+#cast_nav .div-tablecell { 
+	vertical-align: bottom;
+}
+#cast_nav .cast_nav_entry { 
+	margin:0 20px 10px 0;
+	display:inline-block;
+}
+#cast_nav .cast_nav_entry_name { 
+	font-family: 'Conv_Berthold Akzidenz Grotesk Bold',sans-serif;
+	font-size:22px;
+	color:$orange;
+	cursor:pointer;
+	@include transition_color();
+	text-transform: lowercase;
+}
+#cast_nav .cast_nav_entry:hover .cast_nav_entry_name,
+#cast_nav .cast_nav_entry.active .cast_nav_entry_name { 
+	color:#fff!important;	
+}
+
+#cast_nav .cast_nav_entry_line { 
+	
+	width:100%;
+	height:6px;
+	display:block;
+	overflow:hidden;
+}
+#cast_nav .cast_nav_entry_line_inner { 
+	width:100%;
+	height:100%;
+	left:-100%;
+	position:absolute;
+	top:0;
+	background-color:$orange;
+}
+#cast_nav .cast_nav_entry.active .cast_nav_entry_line_inner { 
+	left:0!important;
+}
+
+
+
+
+
+#cast_content { 
+	position:absolute;	
+}
+
+#cast_content #cast_content_member_img_holder { 
+	float:left;
+	width:42%;
+	display:block;
+	overflow:hidden;
+}
+#cast_content .cast_content_member_img { 
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	display:block;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+
+
+#cast_content #cast_content_member_copy_holder { 
+	float:left;
+	@include calc( width, '58% - 15px');
+	margin-left:15px;
+	background-color:rgba(255,255,255,0.9);
+}
+.cast_content_member_copy { 
+	width:100%;
+}
+
+#cast_content .nano { 
+	/*background-color:rgba(255,255,255,0.9);*/
+}
+#cast_content .nano-content { 
+	top:30px;	
+	@include calc( height, '100% - 80px');
+}
+#cast_content .nano-content_inner { 
+	padding:0px 40px;
+}
+#cast_content .nano-content_inner p:last-child { 
+	margin-bottom:0;
+}
+
+#cast_content .cast_content_member_copy h4 { 
+	color:$dkblue;
+	font-family: 'Conv_Berthold Akzidenz Grotesk Bold',sans-serif;
+	font-size:30px;
+	margin-bottom:20px;
+}
+#cast_content .cast_content_member_copy p { 
+	color:#0185b8;
+	/*font-family: 'AkzidenzGroteskBE-Regular',sans-serif;*/
+	font-family: 'Conv_Berthold Akzidenz Grotesk Bold',sans-serif;
+	font-size:19px;
+	margin-bottom:15px;
+}
+
+#cast_arrow { 
+	position:absolute;
+	width:40px;
+	height:44px;
+	display:block;
+	text-align:center;
+	cursor:pointer;
+	background-color:rgba(255,255,255,0.9);
+}
+#cast_arrow svg { 
+	display:inline-block;
+	@include transition_all();
+}
+.device_nottabmobile #cast_arrow:hover { 
+	@include transition_hover();
+	background-color:rgba(1,133,184,0.9);
+}
+.device_nottabmobile #cast_arrow:hover .cls-1 { 
+	@include transition_all();
+	fill:$orange;
+}
+
+#section_cast_tt { display:none;}
+@media only screen and (max-width: $small_breakpoint){
+	#section_cast_tt { 
+		display:block;
+		width:40%;
+		position:absolute;
+		top:10px;
+		left:40px;
+	}
+	#section_cast_tt img { 
+		width:100%;
+		height:auto;
+	}
+	
+	#cast_arrow { 
+		display:none;
+	}
+	
+	#cast_nav { 
+		text-align:center;
+	}
+	#cast_nav .cast_nav_entry { 
+		margin:0 10px;
+	}
+	
+	#cast_nav .cast_nav_entry_name { 
+		margin:0 5px 5px 5px;
+	}
+	
+	#cast_nav .stick_href { 
+		float:left;
+		width:50%;
+		text-align: left;
+	}
+	#cast_nav .cast_nav_entry_line { 
+		display:none;
+	}
+	
+	#cast_content #cast_content_member_img_holder,
+	#cast_content #cast_content_member_copy_holder {
+		float:none;
+		width:100%;
+		margin:10px auto;
+	}
+	#cast_content #cast_content_member_copy_holder { 
+		background-color:transparent;
+	}
+	#cast_content .cast_content_member_copy h4,
+	#cast_content .cast_content_member_copy p {
+		color:#fff;
+	}
+	
+	
+	
+	#cast_content { 
+		margin-bottom:100px;	
+	}
+	#cast_content .nano { 
+		background-color:transparent;
+		overflow: visible;
+	}
+	#cast_content .nano-content { 
+		overflow: visible;
+	}
+	#cast_content .nano-content_inner { 
+		padding:0 20px 50px 0;
+	}
+	/*
+	.page_cast #bg_tinter {
+		background-color:rgba(0,0,0,0.2);
+		display:block;
+	}
+	*/
+	#cast_content .nano { 
+		width:100%;	
+		height:100%;
+		margin:0;
+	}
+	
+	
+	#section_cast .yellow_vertical_line { 
+		display:none;
+	}
+	
+	
+	
+	
+}
+
+

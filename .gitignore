@@ -1,0 +1,8 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+_setup_files/web/assets/cms/images
+__node/node_modules
+
+web/assets/cms

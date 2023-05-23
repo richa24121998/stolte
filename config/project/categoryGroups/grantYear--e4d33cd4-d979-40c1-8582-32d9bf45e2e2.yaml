@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  9643d4dc-e763-4c9a-ae48-2fa5738e3c0b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: grantYear
+name: 'Grant Year'
+siteSettings:
+  665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 599c2736-1d02-4884-8f5e-3ae84bd74560

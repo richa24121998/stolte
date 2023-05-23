@@ -1,0 +1,192 @@
+#popup {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.85);
+
+  #popup_scrim {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+  }
+
+  #popup-content {
+    @include calc( height, '100% - 100px');
+    @include calc( width, '100% - 200px');
+    margin:50px auto;
+    background-color: #fff;
+    max-width: 1300px;
+  }
+
+  #popup-content-inner {
+    width:100%;
+    height:100%;
+    .popup-content-header-img {
+      img {
+        width:100%;
+        height:auto;
+      }
+    }
+    .popup-content-inner-copy {
+      @include calc(height, '100% - 100px');
+      @include calc(width, '100% - 100px');
+      padding: 50px 50px;
+
+      h1 {
+        margin-bottom:0;
+        text-transform:none;
+      }
+      h2 {
+        color:$dark;
+        margin-top:45px;
+      }
+      h2:first-of-type {
+        margin-top:0;
+      }
+      ul {
+        padding-left:40px;
+      }
+      .contact-bottom {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      .popup-image-bg-body {
+        max-width:500px;
+        width:100%;
+        text-align: left;
+        margin:40px 0 20px 0;
+        img {
+          width:100%;
+          height:auto;
+          display: inline-block;
+        }
+      }
+      .contact-txt {
+        width:40%;
+        text-align: left;
+        padding:0 10% 0 10%;
+        h2 {
+          margin-top:0;
+          padding-top:0;
+        }
+      }
+      .contact-bottom-holder {
+        width:100%;
+        height:100%;
+        margin:20px 0 0;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      @media only screen and (max-width: $small_breakpoint) {
+        .contact-bottom {
+          float:none;
+          display: block;
+        }
+        .contact-txt {
+          width:100%;
+        }
+        .popup-image-bg-body {
+          img {
+
+          }
+        }
+
+      }
+
+    }
+
+    .nano-pane {
+      right:0;
+    }
+    .nano>.nano-content {
+      padding:0 0 0 0;
+      right:-35px!important;
+    }
+
+    .popup-image-bg {
+      width:100%;
+      text-align: center;
+      .popup-image-bg-img {
+        display: block;
+        width:30%;
+        height: auto;
+        max-width:500px;
+        margin:0 auto 20px auto;
+      }
+    }
+
+    table {
+      text-align: left;
+      vertical-align: top;
+    }
+    td,
+    th {
+      padding:5px 20px;
+      vertical-align: top;
+      &:first-child {
+        padding-left:0px;
+      }
+    }
+
+
+  }
+  #popup-x {
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    display: block;
+    .material-icons {
+      color: #fff;
+      font-size:36px;
+      @include transition_all();
+      @include pop_out_text();
+      &:hover {
+        color:$orange;
+        transform: rotate(360deg) scale(1.1);
+      }
+    }
+
+  }
+  @media only screen and (max-width: $small_breakpoint) {
+    #popup-content {
+      @include calc(height, '100% - 40px');
+      @include calc(width, '100% - 40px');
+      margin: 20px 20px;
+    }
+    #popup-content-inner {
+      .popup-content-inner-copy {
+        @include calc(height, '100% - 40px');
+        @include calc(width, '100% - 60px');
+        padding: 20px 0 20px 20px;
+      }
+
+      .nano-pane {
+        right: 0;
+      }
+      .nano > .nano-content {
+        padding: 0 0 0 0;
+      }
+
+      .popup-image-bg {
+        .popup-image-bg-img {
+          display: block;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

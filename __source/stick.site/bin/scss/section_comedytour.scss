@@ -1,0 +1,108 @@
+#section_comedytour_copy {
+	position:absolute;
+	z-index:100;
+}
+#section_comedytour_copy h2 { 
+	margin:0 0 5px 0;
+	font-size:26px;
+}
+#section_comedytour_copy p { 
+	margin:0 0 20px 0;	
+}
+
+#section_comedytour_copy #section_comedytour_poster { 
+	float:left;
+}
+#section_comedytour_copy #section_comedytour_poster img { 
+	width:100%;
+	height:auto;
+}
+#section_comedytour_copy .nano { 
+	float:left;
+	padding-left:25px;
+	margin-left:20px;
+}
+#section_comedytour_copy .nano-content_inner { 
+	padding-left:0px;
+}
+
+
+
+#section_comedytour_copy h3.dt-reached { 
+	color:#aaa;
+	margin-bottom:20px;
+}
+#section_comedytour_copy p.dt-reached { 
+	display:none;
+}
+
+#section_comedytour_tt { display:none;}
+
+
+#section_comedy-tour .side-spine { 
+	border-left:5px solid $orange;
+	padding-left:18px;
+}
+#section_comedy-tour .no-side-spine { 
+	border-left:5px solid transparent;	
+	padding-left:18px;
+}
+
+@media only screen and (max-width: $small_breakpoint){
+	#section_comedytour_tt { 
+		display:block;
+		width:40%;
+		position:absolute;
+		top:10px;
+		left:40px;
+	}
+	#section_comedytour_tt img { 
+		width:100%;
+		height:auto;
+	}
+	
+	#section_comedytour_copy { 
+		margin-bottom:100px;	
+	}
+	#section_comedytour_copy p,
+	#section_comedytour_copy h2 { 
+		font-family: 'Conv_Arial Bold',sans-serif;
+		color:#fff;
+	}
+	
+	#section_comedytour_copy #section_comedytour_poster,
+	#section_comedytour_copy .nano { 
+		float:none;
+	}
+	#section_comedytour_copy #section_comedytour_poster {
+		width:100%;	
+	}
+	#section_comedytour_copy #section_comedytour_poster img {
+		width:auto;
+		height:250px;	
+	}
+	#section_comedytour_copy .nano-content { 
+		overflow: visible;
+	}
+	#section_comedytour_copy .nano-content_inner { 
+		padding:0 0 0 0;
+	}
+	#section_comedytour_copy .nano { 
+		width:100%;	
+		height:100%; 
+		margin:15px 0px 0px 0px;
+		overflow: visible;
+	}
+	
+	#section_comedy-tour .yellow_vertical_line { 
+		display:none;
+	}
+	#section_comedy-tour .side-spine,
+	#section_comedy-tour .no-side-spine {
+		border: 0;	
+		padding-left:0px;
+	}
+
+}
+
+

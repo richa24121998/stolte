@@ -1,0 +1,51 @@
+/********************************************************
+PRECLEAR - StickCreations.com - updated 5-16-2017
+********************************************************/
+*{ 
+	position:relative;
+	margin:0;
+	padding:0;
+	outline:none;  /*disables ugly outline*/
+	-webkit-text-size-adjust: 100%;  /*stops ios from resizing copy automatically */
+	-webkit-font-smoothing:antialiased; /*font weight fix */
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004); /*font weight fix */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /*disables ugly highlight */
+} 
+div { 
+	-webkit-overflow-scrolling: touch; /* momentum scrolling for any overflow:scroll */ 
+}
+textarea {
+	resize:none;
+}  
+img { 
+	border:0;  //ensures no border
+	vertical-align:top;  //vertically aligns image, ie fix
+	//disables ugly select
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+} 
+form, 
+fieldset, 
+table  { 
+	border:0;
+}
+table {
+	border-collapse: collapse;  //table cells share border
+	border-spacing: 0;
+}
+input { 
+	box-shadow:none; 
+	box-shadow:0;
+	border:0;
+	border-radius: 0;
+}
+sup { 
+	font-size:50%;
+	font-family:inherit;
+}
+.ui-loader { 
+	display:none; //hide mobile jquery feature
+}

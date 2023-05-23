@@ -1,0 +1,121 @@
+description: null
+handle: superAdmin
+name: 'Super Admin'
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accessplugin-olivemenus
+  - accesssitewhensystemisoff
+  - administrateusers
+  - 'assignusergroup:eb0ac7fd-9462-45d0-a4fe-cd586678cfa2' # Content Admin
+  - assignuserpermissions
+  - 'createentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'createentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'createentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'createentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'createentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'createentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'createfoldersinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'deleteentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'deleteentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'deleteentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'deleteentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'deleteentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'deleteentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'deletefilesandfoldersinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'deletepeerentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'deletepeerentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'deletepeerentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'deletepeerentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'deletepeerentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'deletepeerentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'deletepeerentrydrafts:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'deletepeerentrydrafts:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'deletepeerentrydrafts:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'deletepeerentrydrafts:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'deletepeerentrydrafts:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'deletepeerentrydrafts:b4e85528-fab4-4546-9dcb-58f9c190ca68' # Homepage
+  - 'deletepeerentrydrafts:c1b8ec59-6008-47b6-81cb-6bc28b045020' # Funding
+  - 'deletepeerentrydrafts:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'deletepeerfilesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - deleteusers
+  - 'editglobalset:104901d0-f512-43a2-b9a2-86edc58ab3a3' # Meta Config
+  - 'editglobalset:a60b3fea-fa18-4d21-b244-da6346cd7f3a' # Site Config
+  - 'editimagesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'editpeerfilesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'editpeerimagesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - editusers
+  - moderateusers
+  - registerusers
+  - 'replacepeerfilesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'saveassetinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'viewpeerfilesinvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'viewvolume:2da1b936-f396-4361-bf3d-a5e6aa8fa8be'
+  - 'viewassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'saveassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'deleteassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'replacefiles:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'editimages:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'viewpeerassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'savepeerassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'replacepeerfiles:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'deletepeerassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'editpeerimages:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'createfolders:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  - 'viewcategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'savecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'deletecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'viewpeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'savepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'deletepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'viewcategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'savecategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'deletecategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'viewpeercategorydrafts:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'savepeercategorydrafts:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'deletepeercategorydrafts:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
+  - 'viewentries:c1b8ec59-6008-47b6-81cb-6bc28b045020' # Funding
+  - 'saveentries:c1b8ec59-6008-47b6-81cb-6bc28b045020' # Funding
+  - 'viewpeerentrydrafts:c1b8ec59-6008-47b6-81cb-6bc28b045020' # Funding
+  - 'savepeerentrydrafts:c1b8ec59-6008-47b6-81cb-6bc28b045020' # Funding
+  - 'viewentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'saveentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'viewpeerentrydrafts:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'savepeerentrydrafts:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'viewpeerentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'savepeerentries:55c0d7ad-80d9-42a8-be17-c37bdf832d28' # About People
+  - 'viewentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'saveentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'viewpeerentrydrafts:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'savepeerentrydrafts:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'viewpeerentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'savepeerentries:3dc340d7-d290-449d-a373-369b5c92e86c' # News
+  - 'viewentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'saveentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'viewpeerentrydrafts:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'savepeerentrydrafts:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'viewpeerentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'savepeerentries:9811cd28-3e43-4b3c-b879-00551d5fa3bc' # Funding Pillars
+  - 'viewentries:b4e85528-fab4-4546-9dcb-58f9c190ca68' # Homepage
+  - 'saveentries:b4e85528-fab4-4546-9dcb-58f9c190ca68' # Homepage
+  - 'viewpeerentrydrafts:b4e85528-fab4-4546-9dcb-58f9c190ca68' # Homepage
+  - 'savepeerentrydrafts:b4e85528-fab4-4546-9dcb-58f9c190ca68' # Homepage
+  - 'viewentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'saveentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'viewpeerentrydrafts:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'savepeerentrydrafts:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'viewpeerentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'savepeerentries:2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e' # General Pages
+  - 'viewentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'saveentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'viewpeerentrydrafts:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'savepeerentrydrafts:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'viewpeerentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'savepeerentries:05cd4c32-7f1c-43bf-af56-246502778d15' # Quotes
+  - 'viewentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'saveentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'viewpeerentrydrafts:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'savepeerentrydrafts:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'viewpeerentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'savepeerentries:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
+  - 'assignusergroup:c0bd4e8b-e110-4e53-99de-a3bb63e9da1e' # Super Admin

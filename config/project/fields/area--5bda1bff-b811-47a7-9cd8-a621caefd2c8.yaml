@@ -1,0 +1,35 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c4a27789-70cd-424b-bd6b-c4b00aa93480 # About People
+handle: area
+instructions: ''
+name: Area
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - FOUNDERS
+        -
+          - value
+          - founders
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - TEAM
+        -
+          - value
+          - team
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

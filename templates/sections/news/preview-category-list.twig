@@ -1,0 +1,31 @@
+{% set searchterms = 'category:"' ~ cat ~ '"' %}
+{% set entries = craft.entries({
+    section:    'news',
+    search:     searchterms,
+    orderBy:      'featuredOrder asc, postDate desc'
+}) %}
+{%  if entries|length %}
+    {%  if showtitle %}
+        <h5 id="{{ cat }}">{{  cat_title }}</h5>
+    {% endif %}
+    <div class="article-holder">
+    {% for tentry in entries.all() %}
+        <article class="clearfix">
+            {% if tentry.newsPreviewImage|length %}
+                <div class="img-float">
+                    <a href="{{ tentry.url }}"><img src="{{tentry.newsPreviewImage.one().getUrl('w1000')}}" /></a>
+                </div>
+            {% endif %}
+            <h3><a href="{{ tentry.url }}">{{ tentry.title }}</a></h3>
+            <div class="date-meta">{{ tentry.postDate.format('F d, Y') }}</div>
+            {{ tentry.body.getPage(1) |hacksaw(hack='words', limit='57',allow='<a>',append="...") }}
+            <a href="{{ tentry.url }}">more</a>
+        </article>
+    {% endfor %}
+    </div>
+    {%  if more_link is not empty %}
+        <div class="article-final-line" >
+            <a class="inverse" href="{{ more_link }}">More {{  cat_title }} <span class="miniv">V</span></a>
+        </div>
+    {% endif %}
+{% endif %}

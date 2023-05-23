@@ -1,0 +1,55 @@
+fieldLayouts:
+  ed6bc8b9-fb2b-4c66-b1f2-ca67d5869967:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 422a5dea-9852-4728-9897-db124b040022 # Default Meta Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f4579336-8f88-43b4-bb9c-79d77ae51fda # Default Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bd61e10b-2328-4da6-aa8d-899035edba19 # Default Social Share Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f5482eae-94a5-4760-aa08-d2d0f7365ce2 # Meta Head Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1bac313a-aea4-435f-bdde-1f1d07475aa7 # Meta Body Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: config
+name: 'Meta Config'
+sortOrder: 1

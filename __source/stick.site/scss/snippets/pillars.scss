@@ -1,0 +1,241 @@
+.pillars-outer {
+  padding: 0 0 40px 0;
+
+  .pillar-mobile-button {
+    display: none;
+  }
+  .pillars,
+  .pillar-buttons {
+    clear: both;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    .col {
+      flex: 1 0 0;
+      padding-right:$gutter;
+      &:last-child {
+        padding-right:0;
+      }
+      .pillar-image {
+        background-color: #000;
+        img {
+          width:100%;
+          height: auto;
+          @include transition_all();
+        }
+        .image-caption {
+          @include transition_all();
+        }
+        &:hover {
+          img {
+            opacity:1!important;
+          }
+          .image-caption {
+            color:#fff!important;
+            background-color: rgba(23, 129, 126, 0.70)!important;
+          }
+        }
+      }
+      .pillar-logline {
+        margin:15px 0 5px 0;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color:$dark;
+        }
+      }
+      .pillar-buttona {
+        margin:5px 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $small_breakpoint) {
+    //THREE COLUMN MINI STYLE
+    padding: 0px 0;
+    .pillars {
+      .col {
+        padding-right: 10px;
+        margin-bottom: 0px;
+
+        .pillar-logline {
+          margin: 20px 0;
+        }
+        .image-caption {
+          font-size: 12px;
+          padding: 5px;
+          @include calc(width, '100% - 10px');
+        }
+      }
+
+    }
+    .pillar-buttons {
+      .col {
+        width: 100%;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    //ONE COLUMN  STYLE
+    padding:0px 0;
+    .pillars {
+      display: block;
+      @include calc( width, '100% - 40px');
+
+
+      .col {
+        padding-right: 0;
+        margin-bottom:50px;
+
+        .pillar-logline {
+          margin:20px 0;
+        }
+      }
+
+    }
+    .pillar-buttons {
+      display: none;
+    }
+
+    .pillar-mobile-button {
+      display: block;
+      width:100%;
+      .button {
+        padding:5px 0;
+        width:100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+#funding-priorities-copy {
+  border-bottom:1px solid $light;
+
+
+}
+
+#funding-details {
+  border-top: 1px solid $light;
+  background-color: #ebf4f3;
+  padding:0 40px;
+}
+
+
+.pillar-content {
+  display: none;
+  padding:40px 0 40px 0;
+
+
+  .back-to-top {
+    display:inline-block;
+    margin-top:20px;
+    text-transform: uppercase;
+    font-size:12px;
+    color:$orange;
+    font-weight:600;
+    cursor: pointer;
+    @include transition_all();
+    span {
+      color:$orange;
+      font-weight:600;
+      font-size: 18px;
+      top:2px;
+      transform: scaleX(1.2) scaleY(1.3);
+    }
+    border-bottom:2px solid rgba(226, 60, 37, 0);
+    &:hover {
+      border-bottom:2px solid rgba(226, 60, 37, 1);
+    }
+
+  }
+
+  /*
+  padding:10px;
+  border:1px dashed #000;
+  */
+  &.active {
+    display:block;
+  }
+  h3 {
+    margin-top:30px;
+  }
+  h2 {
+    margin-bottom:5px;
+  }
+  h4 {
+    font-weight: 600;
+  }
+
+  ul {
+    background-color: transparent!important;
+    padding:0 30px!important;
+  }
+  @media only screen and (max-width: $small_breakpoint) {
+
+  }
+}
+
+.page_funding .pillars-outer .pillars {
+  @media only screen and (max-width: $small_breakpoint) {
+      width:100%!important;
+  }
+}
+
+.page_funding .hash .pillars-outer {
+  .pillars,
+  .pillar-buttons {
+    .col {
+
+      .pillar-image {
+        img {
+          @include transition_all();
+          opacity:0.3;
+        }
+      }
+      .image-caption {
+        color:rgba(255,255,255,0.3);
+        @include transition_all();
+      }
+
+      &.active {
+        .pillar-image {
+          img {
+            opacity:1;
+          }
+        }
+        .image-caption {
+          color:rgba(255,255,255,1);
+        }
+      }
+
+
+
+    }
+
+  }
+
+
+
+
+}
+
+.page_funding .pillars-outer {
+  @media only screen and (max-width: $small_breakpoint) {
+    /*
+    width: 100%;
+    .pillars {
+      width: 100%;
+    }
+    */
+  }
+
+}
+

@@ -1,0 +1,20 @@
+<div id="top-image">
+    {% set topImage = entry.topImage.one() %}
+    {% if topImage is not empty %}
+    <div id="top-image-bg">
+        {% set timage_counter = 0 %}
+        {% for timages in entry.topImage.all() %}
+            {% if timage_counter==0 %}
+                {% set tc='first' %}
+            {% else %}
+                {% set tc='next' %}
+            {% endif %}
+            <div id="top-image-hook-{{ timage_counter }}" class="top-image-hook {{ tc }}">
+                <img src="{{timages.getUrl('w1800')}}"/>
+            </div>
+            {% set timage_counter = timage_counter+1 %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+

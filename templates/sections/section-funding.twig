@@ -1,0 +1,30 @@
+{% extends "_layout" %}
+
+{% block content %}
+<div class="inner-padder">
+
+    <div id="funding-priorities"  class="field-sec">
+        {{entry.body}}
+    </div>
+    <div id="funding-priorities-copy" class="field-sec">
+        {% set pillars_section='funding' %}
+        {{ include('snippets/pillars.twig') }}
+    </div>
+    <div id="grant-opportunities" class="field-sec">
+        {{entry.grantInquiry}}
+    </div>
+    <div id="grant-opportunities-copy" class="field-sec indenter">
+        {{entry.grantInquirySub}}
+    </div>
+    <div id="rfp-archives" class="field-sec">
+        {{entry.rfpArchives}}
+    </div>
+    <div id="rfp-archives-copy" class="field-sec indenter">
+        {{entry.rfpArchivesSub}}
+    </div>
+    <div class="field-sec">
+        {{entry.body2}}
+    </div>
+
+</div>
+{% endblock %}

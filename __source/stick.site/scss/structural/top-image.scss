@@ -1,0 +1,36 @@
+#top-image {
+  width:100%;
+  margin-bottom: 10px;
+  border-top:1px solid $light;
+  border-bottom:1px solid $light;
+
+  .top-image-hook {
+    opacity:0;
+  }
+  #top-image-hook-0 {
+    opacity:1;
+  }
+
+  #top-image-bg {
+    overflow: hidden;
+    width:100%;
+    height:auto;
+    .next {
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
+
+  #top-image-bg img {
+    width:100%;
+    height:auto;
+  }
+
+  @media only screen and (max-width: $small_breakpoint) {
+
+  }
+
+}
+
+

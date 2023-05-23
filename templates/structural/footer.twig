@@ -1,0 +1,17 @@
+<footer>
+    <div class="footer-menu custom-container">
+        {{ include('structural/footer-pillar-nav.twig') }}
+
+        <!-- Mini Menu -->
+        <div class="f-menu">
+            {{ craft.olivemenus.getMenuHTML('miniFooter') }}
+        </div>
+
+        <!--Copyright section-->
+        <div class="copy-rights">
+            <span>©{{ now|date('Y') }} Stolte Family Foundation</span>
+        </div>
+    </div>
+
+    </div>
+</footer> <!-- Footer container End-->

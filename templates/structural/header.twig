@@ -1,0 +1,29 @@
+
+<nav class="navbar custom-container">
+    <div class="logo">
+        <a href="/" target="_self">
+            <img alt="Stotle Family Foundation"  title="Stotle Family Foundation" src="/assets/site/images/elements/logo-trees.png"/>
+        </a>
+    </div>
+    <!-- Desktop Navigation Menu -->
+    <div class="navbar-nav">
+        <div class="navbar-menu">
+                {{ craft.olivemenus.getMenuHTML('mainMenu',{ 'menu-id': 'main-menu' }) }}
+        </div>
+    </div>
+    <!-- Hambarger Icons -->
+    <button class="hambarger-icon" id="sidebar-button">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu sidebar-close" id="sidebar-menu">
+        <div class="sidebar-menu-container">
+            <div class="navbar-menu">
+                {{ craft.olivemenus.getMenuHTML('mainMenu',{ 'menu-id': 'main-menu' }) }}
+            </div>
+            <button class="sidebar-close-button" id="sidebar-close-button">
+                <i class="fa-solid fa-angle-left"></i> Back
+            </button>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,63 @@
+.stick_magic_field {
+	width:100%;border-bottom: 1px solid #5F5F5F;padding-bottom:5px;margin-bottom:40px;
+	&.error {
+		border-bottom: 1px solid transparent;
+	}
+}
+.stick_magic_field input { padding:5px 10px;width:96%;font-family: Karla;font-size: 16px;line-height: 16px;line-height: 18px;font-weight:400;letter-spacing: 1px;color: $gray;border:0px;background-color:transparent;background-image:url('../images/invis.gif');color: #FFFFFF;}
+.stick_magic_field label { position:absolute;top:7px;left:10px;font-family: Inconsolata;font-size: 13px;line-height: 13px;letter-spacing: 1px;color:#fff;font-weight:400;@include transition_all();opacity:1;text-transform:uppercase;}
+.stick_magic_field.labelactive label {top:-20px;opacity:1;color:$green}
+
+
+/* use big style - overwrite above - saving above in case we want to revert */
+
+.stick_magic_field.error input  {border-bottom: 1px solid $red;}
+
+.stick_magic_field_error_display { display:none;margin:5px 0px!important;}
+
+.stick_magic_field_errors {/*font-family: Inconsolata;font-size: 13px;font-weight: bold;line-height: 13px;letter-spacing: 1px;color: $gray;*/}
+
+.stick_magic_field.checkbox .stick_magic_field_error_display { left:30px;}
+
+.checkbox_txt {@include calc( width, '100% - 30px');left:30px;font-family: Karla;font-size: 12px;line-height: 19px;color: $gray;display:block;}
+.checkbox_box { position:absolute;box-sizing: border-box;width: 23px;height: 23px;border: 1px solid #5F5F5F;display:block;cursor:pointer;@include transition_hover();}
+.checkbox_box:hover { background-color:#5F5F5F;}
+.checkbox_box:after {
+	content: "";
+	color: #6e9f1f;
+	font-family: arial;
+	font-weight: bold;
+	display: -webkit-flex;
+	display: -ms-Flexbox;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		position: absolute;
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+.checkbox_box.active {
+	background-color:transparent;border: 3px solid $green;
+	&:after {
+		content: "X";
+	}
+}
+.stick_magic_field.error .checkbox_box { background-color:#E8E8E8;border: 3px solid $red;}
+.checkbox_txt span { font-weight:bold;text-decoration:underline;cursor:pointer;@include transition_hover();}
+.checkbox_txt span:hover {color:$green;}
+
+.checkbox_txt_right { width:100%;left:0px;text-align:right;}

@@ -1,0 +1,50 @@
+{% extends "_layout" %}
+
+{% block content %}
+<div class="inner-padder">
+    {{ include('snippets/breadcrumbs.twig') }}
+    <div id="main" class="inner-body">
+    {{entry.body}}
+    </div>
+
+    {# =========================
+    PAGES
+    ==========================#}
+    {# =========================
+PAGES
+========================== #}
+{%  switch craft.app.request.getSegment(1)  %}
+    {% case "about" %}
+        {{ include('snippets/list-about.twig') }}
+    {% case "education" %}
+        {{ include('sections/education.twig') }}
+    {% case "climate" %}
+        {{ include('sections/climate.twig') }}
+    {% case "civic-engagement" %}
+        {{ include('sections/civic-engagement.twig') }}
+    {% case "our-grantees" %}
+        {{ include('snippets/list-grantees.twig') }}
+    {% case "contact-us" %}
+        {{ include('snippets/contact-form.twig') }}
+    {% case "news-resources" %}
+        {% set showtitle = true %}
+        {{ include('sections/news/index.twig') }}
+    {% case "news-resources-all-news" %}
+        {% set cat = "news" %}
+        {% set cat_title = "News" %}
+        {% set showtitle = false %}
+        {{ include('sections/news/category.twig') }}
+    {% case "news-resources-all-resources" %}
+        {% set cat = "resources" %}
+        {% set cat_title = "Resources" %}
+        {% set showtitle = false %}
+        {{ include('sections/news/category.twig') }}
+    {% case "news-resources-all-blogs" %}
+        {% set cat = "blog" %}
+        {% set cat_title = "Blog" %}
+        {% set showtitle = false %}
+        {{ include('sections/news/category.twig') }}
+{% endswitch %}
+
+</div>
+{% endblock %}

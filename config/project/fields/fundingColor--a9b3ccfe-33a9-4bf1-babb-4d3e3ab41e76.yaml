@@ -1,0 +1,12 @@
+columnSuffix: uhysscvl
+contentColumnType: string(7)
+fieldGroup: 89e4f9a8-97f1-495f-a843-fabadbfc6a6c # Funding Pillars
+handle: fundingColor
+instructions: null
+name: 'Funding Color'
+searchable: false
+settings:
+  defaultColor: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

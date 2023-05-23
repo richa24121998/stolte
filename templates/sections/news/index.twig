@@ -1,0 +1,16 @@
+<div class="news-index">
+{% set cat = "news" %}
+{% set cat_title = "News" %}
+{% set more_link = "news-resources-all-news" %}
+{{ include('sections/news/preview-category-list.twig') }}
+
+{% set cat = "resources" %}
+{% set cat_title = "Resources" %}
+{% set more_link = "news-resources-all-resources" %}
+{{ include('sections/news/preview-category-list.twig') }}
+
+{% set cat = "blog" %}
+{% set cat_title = "Blog" %}
+{% set more_link = "news-resources-all-blogs" %}
+{{ include('sections/news/preview-category-list.twig') }}
+</div>

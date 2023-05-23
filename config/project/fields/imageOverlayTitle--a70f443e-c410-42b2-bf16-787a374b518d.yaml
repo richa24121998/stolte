@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c4a27789-70cd-424b-bd6b-c4b00aa93480 # About People
+handle: imageOverlayTitle
+instructions: ''
+name: 'Image Overlay Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: '50'
+  code: false
+  columnType: string
+  initialRows: '2'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

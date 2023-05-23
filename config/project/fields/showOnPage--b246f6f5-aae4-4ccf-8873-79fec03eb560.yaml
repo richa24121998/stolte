@@ -1,0 +1,45 @@
+columnSuffix: rfdlirjg
+contentColumnType: string
+fieldGroup: a0644ef7-a1d8-4320-89f4-de089d9c7dbf # Funding Priorities
+handle: showOnPage
+instructions: null
+name: 'Show on Page'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Education
+        -
+          - value
+          - education
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Climate
+        -
+          - value
+          - climate
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Civic Engagement'
+        -
+          - value
+          - civic-engagement
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

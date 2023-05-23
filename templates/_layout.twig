@@ -1,0 +1,34 @@
+{#
+ # Layout template
+ # ---------------
+ #
+ # This template defines your site’s global layout. It can be
+ # “extended” by other templates to fill in the gaps.
+ #
+ # See Twig’s Template Inheritance documentation for more details:
+ # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
+ #}
+{%  set cacheBust = "6" %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+    {{ include('structural/meta.twig') }}
+</head>
+
+<body class="page_{{ entry.slug }}">
+    {{ include('structural/meta-post-body.twig') }}
+    <div id="custom-container">
+        {{ include('structural/header.twig') }}
+        {{ include('structural/nav-mobile.twig') }}
+        {{ include('structural/top-image.twig') }}
+
+		<main id="content">
+			{% block content %}
+			{% endblock %}
+		</main>
+
+        {{ include('structural/footer.twig') }}
+        {{ include('structural/popup.twig') }}
+	</div>
+</body>
+</html>

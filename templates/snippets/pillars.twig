@@ -1,0 +1,62 @@
+<div class="pillars-outer">
+    <div class="pillars {% if entry.slug!="funding" %}inner-padder{% endif %} clearfix">
+        {% set index = 1 %}
+        {% for tentry in craft.entries.section('fundingPillars').limit(3).all() %}
+            <div class="col col{{ index}}" index="{{ index }}">
+                    <a index="{{ index }}" class="pillar-buttona pillar-button{{ index }} analytics_handle" l1="funding-pillars" l2="{{ index }}" l3="click" nohashhref="/funding" href="/funding#p{{ index }}">
+                        <div class="pillar-image">
+                            <img src="{{tentry.fundingImage.one().getUrl('w1000')}}"/>
+                            <div class="image-caption">
+                                {{tentry.fundingImageCaption|upper|nl2br}}
+                            </div>
+                        </div>
+                    </a>
+
+
+                <div class="pillar-logline">
+                    <p>{{tentry.fundingLogline}}</p>
+                </div>
+
+                <div class="pillar-mobile-button">
+                    <a index="{{ index }}" class="pillar-buttona pillar-button{{ index }} analytics_handle" l1="funding-pillars" l2="{{ index }}" l3="click" nohashhref="/funding" href="/funding#p{{ index }}">
+                        <div class="pillar-button button">LEARN MORE ></div>
+                    </a>
+                </div>
+
+            </div>
+            {% set index = index + 1 %}
+        {% endfor %}
+
+    </div>
+    <div class="pillar-buttons {% if entry.slug!="funding" %}inner-padder{% endif %}  clearfix">
+        {% set index = 1 %}
+        {% for tentry in craft.entries.section('fundingPillars').limit(3).all() %}
+            <div class="col col{{ index}}" index="{{ index }}">
+                <a index="{{ index }}" class="pillar-buttona pillar-button{{ index }} analytics_handle" l1="funding-pillars" l2="{{ index }}" l3="click" nohashhref="/funding" href="/funding#p{{ index }}"><div class="pillar-button button">
+                    LEARN MORE >
+                </div></a>
+            </div>
+            {% set index = index + 1 %}
+        {% endfor %}
+
+    </div>
+</div>
+{% if entry.slug=="funding" %}
+    <div id="funding-details" class="pillars-content">
+        {% set index = 1 %}
+        {% for tentry in craft.entries.section('fundingPillars').limit(3).all() %}
+            <div class="pillar-content pillar-content{{ index }}">
+                {{tentry.fundingBody}}
+
+                <div class="back-to-top">
+                    <span>^</span> BACK TO TOP
+                </div>
+
+            </div>
+            {% set index = index + 1 %}
+
+
+
+        {% endfor %}
+    </div>
+{%  endif %}

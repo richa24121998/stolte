@@ -1,0 +1,56 @@
+{% macro errorList(errors) %}
+    {% if errors %}
+        <ul class="errors">
+            {% for error in errors.all() %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+{% from _self import errorList %}
+
+
+
+<form id="contact-form" method="post" action="" onclick="" accept-charset="UTF-8">
+    {{ csrfInput() }}
+    <input type="hidden" name="action" value="contact-form/send">
+    {#
+    <input type="hidden" name="action" value="contactForm/sendMessage">
+    #}
+    {{ redirectInput('contact-us#thanks') }}
+
+    <p><sup class='orange'>*</sup>Required</p>
+
+    <h3><label for="fromName">Your Name<sup class='orange'>*</sup></label></h3>
+    <input id="fromName" type="text" name="fromName" value="{% if message is defined %}{{ message.fromName }}{% endif %}">
+    {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+    <h3><label for="fromEmail">Your Email<sup class='orange'>*</sup></label></h3>
+    <input id="fromEmail" type="email" name="fromEmail" value="{% if message is defined %}{{ message.fromEmail }}{% endif %}">
+    {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+
+    <h3><label for="subject">Phone<sup class='orange'>*</sup></label></h3>
+    <input id="phone" type="tel" name="phone"  value="{% if message is defined %}{{ message.phone }}{% endif %}">
+    {{ message is defined and message ? errorList(message.getErrors('phone')) }}
+
+    <h3><label for="message">Message<sup class='orange'>*</sup></label></h3>
+    <textarea rows="10" cols="40" id="message" name="message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
+    {{ message is defined and message ? errorList(message.getErrors('message')) }}
+
+
+    {{craft.recaptcha.render()}}
+    {%  if captcha_error is defined %}
+        <p class="orange">You must fill out the captcha.</p>
+    {%  endif %}
+
+    <input onclick="return validateContact();" class="button" type="submit" value="Send">
+</form>
+<script>
+    $(document).ready(function() {
+        if (window.location.hash === "#thanks") {
+            $('.page_contact-us #main').hide();
+            $('#contact-form').html('<h2>Thank you!</h2><p>Your submission has been sent.</p>');
+        }
+    });
+</script>

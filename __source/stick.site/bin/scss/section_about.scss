@@ -1,0 +1,235 @@
+#section_about_copy {
+	position:absolute;
+	z-index:100;
+}
+#section_about_copy h2 { 
+	margin:0 0 5px 0;
+}
+#section_about_copy p { 
+	margin:0 0 20px 0;	
+}
+#section_about_copy p,
+#section_about_copy h2 { 
+	font-family: 'Conv_Arial Bold',sans-serif;
+	/*color:#0185b8;*/
+	color:#fff;
+}
+#section_about_copy .nano { 
+	background-color:rgba(30,59,77,0.9);
+}
+#section_about_copy .nano-content { 
+	top:30px;	
+	@include calc( height, '100% - 80px');
+}
+#section_about_copy .nano-content_inner { 
+	padding:0px 40px;
+}
+#section_about_copy .nano-content_inner p:last-child { 
+	margin-bottom:0;
+}
+
+
+
+#section_about_box { 
+	position: absolute;
+	top:0px;
+	left:10px;	
+}
+#section_about_box_small_img img {
+	width:100%;
+	height:auto;
+}
+#section_about_box_small_play { 
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+#section_about_box_small_play .offon_holder { 
+	display:inline-block;
+	left:5px;
+}
+
+#section_about_box_small_play .offon_holder .on,
+#section_about_box_small_play .offon_holder .off {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+#section_about_box_small_play .offon_holder .on img,
+#section_about_box_small_play .offon_holder .off img {
+	width:100%;
+	height:auto;	
+}
+#section_about_box_small_play .offon_holder .on { 
+	z-index: 1;
+	opacity:0;
+	@include transition_type(opacity);
+}
+#section_about_box_small { 
+	cursor:pointer;
+}
+#section_about_box_small:hover #section_about_box_small_play .offon_holder .on { 
+	opacity:1;
+}
+#section_about_box_large { 
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	z-index:5;
+}
+#section_about_box_large_inner { 
+	width:0%;
+	height:100%;
+	overflow:hidden;
+	display:block;
+	background-color:#000;
+}
+#section_about_box_large_video { 
+	
+}
+#section_about_box_large_video .about_vid_vid { 
+	width:100%;
+	height:100%;	
+}
+
+#section_about_box_large_buttons { 
+	position: absolute;
+	left:0;
+	width:100%;
+	display:none;
+}
+.about_box_large_button { 
+	height:20px;
+	width:auto;
+	padding:0px 10px;
+	text-align:center;
+	display:inline-block;
+	overflow:hidden;
+	background-color:$orange;
+	cursor: pointer;
+}
+
+.about_box_large_button .bg { 
+	width:100%;
+	height:100%;
+	display:block;
+	background-color: $orange;
+	display:none;
+}
+.about_box_large_button .txt { 
+	font-family: 'Conv_Arial Bold',sans-serif;
+	color:#fff;
+	z-index:2;
+	top:2px;
+	font-size:14px;
+}
+.about_box_large_button,
+.about_box_large_button .txt  { 
+	@include transition_color();
+}
+.about_box_large_button:hover { 
+	background-color:$orange;
+}
+.about_box_large_button:hover .txt {
+	color:#000;
+}
+
+
+
+#section_about_box_big_controls { 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 5;
+	height:100%;
+	width:100%;
+}
+#section_about_box_big_controls_holder { 
+	left:10px;
+	display: inline-block;
+}
+#section_about_box_big_controls_holder .btn { 
+	display:inline-block;
+	cursor:pointer;
+	display:none;
+}
+#section_about_box_big_controls_holder .btn svg { 
+	width:100%;
+	height:100%;
+}
+#section_about_box_big_controls_holder .btn svg .cls-1,
+#section_about_box_big_controls_holder .btn svg .cls-2 { 
+	@include transition_all();	
+}
+#section_about_box_big_controls_holder .btn:hover svg .cls-1 { 
+	stroke: $orange;
+}
+#section_about_box_big_controls_holder .btn:hover svg .cls-2 { 
+	fill: $orange;
+}
+
+
+#about_vid_mobile_grabber { 
+	z-index:5;
+	displaY:none;
+}
+
+
+
+#section_about_tt { display:none;}
+@media only screen and (max-width: $small_breakpoint){
+	#section_about_box,
+	#section_about .yellow_vertical_line { 
+		display:none;
+	}
+	#section_about_tt { 
+		display:block;
+		width:40%;
+		position:absolute;
+		top:10px;
+		left:40px;
+	}
+	#section_about_tt img { 
+		width:100%;
+		height:auto;
+	}
+	#section_about_copy p,
+	#section_about_copy h2 { 
+		color:#fff;
+	}
+	#section_about_copy .nano { 
+		background-color:transparent;
+		overflow: visible;
+	}
+	#section_about_copy .nano-content { 
+		overflow: visible;
+	}
+	#section_about_copy .nano-content_inner { 
+		padding:0 20px 50px 0;
+	}
+	
+	.page_about #bg_tinter {
+		background-color:rgba(0,0,0,0.2);
+		display:block;
+	}
+	#section_about_copy .nano { 
+		width:100%;	
+		height:100%;
+		margin:0;
+	}
+	#section_about_copy { 
+		
+	}
+	
+	#about_vid_mobile_grabber { 
+		display:block;
+	}
+
+}
+
+

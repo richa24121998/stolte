@@ -1,0 +1,9 @@
+baseUrl: $DEFAULT_SITE_URL
+enabled: true
+handle: en_us
+hasUrls: true
+language: en-US
+name: 'Stolte Family Foundation (en-US)'
+primary: true
+siteGroup: ce2e3646-7cfd-4820-82cf-c64ff3ce9b78 # Stotle Family Foundation (en-US)
+sortOrder: 1

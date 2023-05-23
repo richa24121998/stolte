@@ -1,0 +1,129 @@
+<div class="grantees-outer">
+    <div class="grantees-filter clearfix noselect">
+        <h5>FILTER GRANTEE LISTS</h5>
+        <div class="col col1">
+            <div class="title">FUNDING PRIORITIES</div>
+            <div class="cb-wrapper clearfix">
+                <div class="cb">
+                    <div class="cb-left">
+                        <span section="col1" val="all" class="cb-square cb-square-all active"></span>
+                    </div>
+                    <div class="cb-right">
+                        <span class="cb-value">All</span>
+                    </div>
+                </div>
+                {% set tfield = craft.app.fields.getFieldByHandle('fundingPriorities') %}
+                {% for tfieldentry in tfield.settings %}
+                    {% for tobj in tfieldentry %}
+                        <div class="cb">
+                            <div class="cb-left">
+                                <span section="col1" val="{{ tobj.value }}" class="cb-square cb-square-other"></span>
+                            </div>
+                            <div class="cb-right">
+                                <span class="cb-value">{{ tobj.label }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col col2">
+            <div class="title">GRANT YEAR</div>
+            <div class="cb-wrapper clearfix">
+                <div class="cb cb-all" >
+                    <div class="cb-left">
+                        <span section="col2" val="all" class="cb-square cb-square-all active"></span>
+                    </div>
+                    <div class="cb-right">
+                        <span class="cb-value" >All</span>
+                    </div>
+                </div>
+                {% for i in range(siteConfig.mostRecentGrantYear, siteConfig.oldestGrantYear) %}
+                    {% set yearValue = i %}
+                    {% set yearLabel = i %}
+                    {{ include('snippets/list-grantees-year') }}
+                {% endfor %}
+                {% set yearValue = "older" %}
+                {% set yearLabel = "Older" %}
+                {{ include('snippets/list-grantees-year') }}
+            </div>
+        </div>
+
+        <div class="col col3">
+            <div class="title">ORGANIZATION SEARCH</div>
+            <div class="search-container">
+                <div class="search-container-input">
+                    <input id="grantee-filter-search" placeholder="Organization Name"/>
+                </div>
+                <div class="search-container-icon">
+                    <i class="material-icons">&#xE8B6;</i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="grantees-no-results">
+        <h2>NO GRANTEES FOUND</h2>
+    </div>
+    <div class="grantees clearfix">
+        {% set index = 1 %}
+        {% for tentry in craft.entries.section('grantees').orderBy('title asc').all() %}
+            {% set grantYearCSVList = '' %}
+            {# get grant year - but put all old entries as older  #}
+            {% for tempYearCategory in tentry.grantYear.all() %}
+                {% set tempYear = tempYearCategory.slug %}
+                {% if tempYear != 'older' %}
+                    {% if tempYear|number_format < siteConfig.oldestGrantYear|number_format %}
+                        {% set tempYear = 'older' %}
+                    {% endif %}
+                {% endif %}
+                {% if grantYearCSVList is not empty %}
+                    {% set grantYearCSVList = grantYearCSVList ~ ', ' %}
+                {% endif %}
+                {% set grantYearCSVList = grantYearCSVList ~ tempYear %}
+            {% endfor %}
+            <div
+                    class="col col{{ index}} col-{{ tentry.slug}}"
+                    slug="{{ tentry.slug }}"
+                    index="{{ index }}"
+                    meta-title="{{ tentry.title  }}"
+                    meta-year="{{ grantYearCSVList }}"
+                    meta-funding-priorities="{{ tentry.fundingPriorities | join(', ') }}"
+            ><div class="col-inner">
+                <div class="grantee-image">
+                    {% if tentry.grantImage|length %}
+                        {% set timage = "background-image:url('" ~ tentry.grantImage.one().getUrl('w1000') ~ "');" %}
+                    {%  else %}
+                        {% set timage = "" %}
+                    {% endif %}
+                    <div class="grantee-image-bg" style="background-color:#ccc;{{ timage }}"></div>
+                </div>
+                <div class="grantee-title">
+                    <h3>{{ tentry.title }}</h3>
+                </div>
+                <div class="grantee-logline">
+                    <p>{{ tentry.blurb }}</p>
+                </div>
+                <div class="grantee-body">
+                    {% if tentry.grantPopupHeader|length %}
+                    <div class="popup-content-header-img">
+                        <img class="popup-image-bg-img" src="{{tentry.grantPopupHeader.one().getUrl('w1800')}}" />
+                    </div>
+                    {% endif %}
+                    <div class="popup-content-inner-copy">
+                        <h1>{{ tentry.title }}</h1>
+                        {{ tentry.grantDetails }}
+                        {% if tentry.grantPopupLogo|length %}
+                            <div class="popup-image-bg-body">
+                                <img class="popup-image-bg-body-img" src="{{ tentry.grantPopupLogo.one().getUrl('w1000') }}" />
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div></div>
+
+            {% set index = index + 1 %}
+        {% endfor %}
+    </div>
+</div>

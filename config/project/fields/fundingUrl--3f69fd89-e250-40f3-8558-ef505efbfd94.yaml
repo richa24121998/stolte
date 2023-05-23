@@ -1,0 +1,14 @@
+columnSuffix: zvlwvfiu
+contentColumnType: string(255)
+fieldGroup: 89e4f9a8-97f1-495f-a843-fabadbfc6a6c # Funding Pillars
+handle: fundingUrl
+instructions: null
+name: 'Funding Url'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

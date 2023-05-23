@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: fundingPillars
+name: 'Funding Pillars'
+propagationMethod: all
+siteSettings:
+  665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: a71ebc5b-c6b6-41ef-b95d-bfe3c2941871
+type: structure

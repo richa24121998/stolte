@@ -1,0 +1,46 @@
+<div id="top-images">
+    {% set title = entry.topImageTitle %}
+    {% set caption = entry.topImageCaption %}
+    {% set topImage = entry.topImage.one() %}
+
+    {% if topImage is not empty %}
+
+        {% if entry.topImage|length == 1 %}
+            {% for timages in entry.topImage.all() %}
+                {% set url = timages.getUrl('w1800') %}
+                <div class="banner-section single-top-image" style="background: url({{url}})">
+                    <div class="banner-content">
+                        <h2 class="banner-title">{{ title }}</h2>
+                        <p>{{ caption }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% if entry.topImage|length > 1 %}
+            <div class="swiper-container slider-top-image">
+                <div class="swiper">
+                    <div class="swiper-wrapper"> 
+                        {% for timages in entry.topImage.all() %}
+                        {% set url = timages.getUrl('w1800') %}
+                        <div class="swiper-slide">
+                            <div class="banner-section single-top-image" style="background: url({{url}})">
+                                <div class="banner-content">
+                                    <h2 class="banner-title">{{ title }}</h2>
+                                    <p>{{ caption }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+</div>

@@ -1,0 +1,14 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ab97eced-2c66-43df-8866-f5604d148745 # Config
+handle: grantNote
+instructions: ''
+name: 'Grant Note'
+searchable: true
+settings:
+  errorMessage: 'Component class ''barrelstrength\sproutfields\fields\Notes'' belongs to an uninstalled plugin (Sprout Fields).'
+  expectedType: barrelstrength\sproutfields\fields\Notes
+  settings: '{"hideLabel":"1","notes":"<p>This setting only controls what years display on the \"Our Grantees\" page in the public website. It does <em>not</em> affect how you manage and tag the Grantees.</p><p>If you wish to tag Grantees with a new year, first go to the \"Categories\" section of this admin and add your new year there, then go and edit and save your Grantees with this new year.</p><p>There is also a bulk edit feature in this admin, where you can check multiple entries and merge in, subtract from, or replace information (good for bulk adding new years, for example)</p>","output":"richText","style":""}'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MissingField
