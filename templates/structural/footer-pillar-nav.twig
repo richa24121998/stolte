@@ -6,8 +6,21 @@
 <div class="f-menu">
 	{% set color = entry.getFieldValue('fundingColor') ?? '#000' %}
 	<h6 class="f-ttl" style="color: {{ color }}">
-		{% set url = entry.fundingSmallIcon[0].getUrl() %}
-		<img src="{{ url }}" class="f-icons">
+
+					{% if entry.fundingSmallIcon|length > 0 %}
+
+				 {% set url = entry.fundingSmallIcon[0].getUrl() %}
+
+					 <img src="{{ url }}" class="f-icons">
+
+					{% else %}
+
+					 {% set url = '' %}
+
+					 <img src="{{ url }}" class="f-icons">
+
+					{% endif %}
+
 		{{ entry.title }}
 	</h6>
 	<p>{{ entry.fundingLogline }}</p>
