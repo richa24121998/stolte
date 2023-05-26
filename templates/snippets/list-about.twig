@@ -1,21 +1,20 @@
-{% set old_area = "-1" %}
-{% set counter = 1 %}
-{% for tentry in craft.entries.section('aboutList').all() %}
-    {% if old_area != tentry.area %}
-        {% set old_area = tentry.area %}
-        {% set counter = 1 %}
-        <h5 id="{{ tentry.area|lower }}">{{tentry.area|upper }}</h5>
-    {% endif %}
-    <div class="element clearfix {{ counter is odd ? 'odd' : 'even' }}">
-        <div class="element-full element_full-copy"><div class="element-full-inner">
-            <div class="element-half element_half-img">
-                <img src="{{tentry.image.one().getUrl('w1000')}}"/>
-                <div class="image-caption">
-                    {{tentry.imageOverlayTitle|upper|nl2br}}
+<div class="main-section">
+        <div class="main-content custom-container">
+        {% for aentry in craft.entries.section('aboutList').all() %}
+            <div class="widget">
+                <div class="widget-img">
+                <img src="{{aentry.image.one().getUrl('w1000')}}"/>
+                </div>
+                <div class="widget-content">
+                    <h3 class="widget-title blue">
+                        <span style="color:#4D8BAA !important;font-size: 45px;">{{aentry.imageOverlayTitle}}</span>
+                    </h3>
+                    <strong>{{aentry.position}}</strong>
+                    <div class="widget-details">
+                    {{aentry.description}}
+                    </div>
                 </div>
             </div>
-            {{tentry.description}}
-        </div></div>
+            {% endfor %}
+        </div>
     </div>
-    {% set counter = counter + 1 %}
-{% endfor %}

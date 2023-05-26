@@ -4,28 +4,30 @@
     search:     searchterms,
     orderBy:      'featuredOrder asc, postDate desc'
 }) %}
+{% set cat = "news" %}
 {%  if entries|length %}
     {%  if showtitle %}
-        <h5 id="{{ cat }}">{{  cat_title }}</h5>
-    {% endif %}
-    <div class="article-holder">
+    <!-- Pillar List  Start -->
+    <div class="pillar-list custom-container">
     {% for tentry in entries.all() %}
-        <article class="clearfix">
+        <div class="pillar-widget">
+            <div class="pillar_image">
             {% if tentry.newsPreviewImage|length %}
-                <div class="img-float">
-                    <a href="{{ tentry.url }}"><img src="{{tentry.newsPreviewImage.one().getUrl('w1000')}}" /></a>
-                </div>
+            <a href="{{ tentry.url }}"><img src="{{tentry.newsPreviewImage.one().getUrl('w1000')}}" /></a>
             {% endif %}
-            <h3><a href="{{ tentry.url }}">{{ tentry.title }}</a></h3>
-            <div class="date-meta">{{ tentry.postDate.format('F d, Y') }}</div>
-            {{ tentry.body.getPage(1) |hacksaw(hack='words', limit='57',allow='<a>',append="...") }}
-            <a href="{{ tentry.url }}">more</a>
-        </article>
-    {% endfor %}
-    </div>
-    {%  if more_link is not empty %}
-        <div class="article-final-line" >
-            <a class="inverse" href="{{ more_link }}">More {{  cat_title }} <span class="miniv">V</span></a>
+            </div>
+            <div class="pillar-widget-content">
+            <a href="{{ tentry.url }}" class="blue">{{ tentry.title }}</a>
+        </a>
+
+                <h6>{{ tentry.postDate.format('F d, Y') }}</h6>
+                {{ tentry.body.getPage(1) |hacksaw(hack='words', limit='57', allow='<a>', append=",...") }}
+                <a href="{{ tentry.url }}" ><span class="learn-more">...more ></span></a>
+
+            </div>
         </div>
+        {% endfor %}
     {% endif %}
+    </div>
 {% endif %}
+    

@@ -2,6 +2,7 @@ fieldLayouts:
   2fdecf00-d83e-437b-89fd-1fdde53dc919:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,46 +26,73 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5d602319-34de-4c81-9938-475e791ec1d2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 5bda1bff-b811-47a7-9cd8-a621caefd2c8 # Area
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7598422a-f8a6-461b-bccb-4c4512e7b868
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a70f443e-c410-42b2-bf16-787a374b518d # Image Overlay Title
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 47b1d1c3-045d-45c0-82ab-1bc54185c9d5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
+            fieldUid: 95d6f7c9-6d91-49e3-8a58-37c308c9ff9d # position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2195b9c-2847-4618-bcca-cf65a84f3f43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: d72415e0-6aed-4abd-8168-1a280232aed2 # Image
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f6bada40-ea75-4fe7-acf4-8cb68dfc2677
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 89a26fef-5211-426b-a4e4-664a86902217 # Description
             instructions: null
             label: null
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 56fa03a2-08fb-48bf-ab2d-c24698088fe9
+            userCondition: null
             warning: null
             width: 100
         name: 'List About'
-        sortOrder: 1
+        uid: 932914a2-12c7-420c-8d87-7a92f5812085
+        userCondition: null
 handle: aboutList
 hasTitleField: true
 name: 'About List'

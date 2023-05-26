@@ -2,42 +2,13 @@
 
 {% block content %}
 {% set pillars_section='home' %}
-{# {{ include('snippets/pillars.twig') }} #}
+
 
 <div class="main-section">
-    <div class="main-content custom-container">
+    <div class="main-content custom-container"> 
 
-        {% for tentry in craft.entries.section('fundingPillars').limit(3).all() %}
-           
-            <div class="widget">
-                <div class="widget-img">
-                    <img src="{{tentry.fundingImage.one().getUrl('w1000')}}"/>
-                </div>
-                <div class="widget-content">
-                    <h3 class="widget-title ">
-                        <span style="color:{{tentry.fundingColor}}"> {{ tentry.title }}</span>
-                        
-                        {% if tentry.fundingIcon is not null %}
-                            {% set image = tentry.fundingIcon.one() %}
-                            {% if image %}
-                                <img src="{{ image.getUrl('w1000') }}" alt="{{ image.title }}">
-                            {% endif %}
-                        {% endif %}
-
-                    </h3>
-                    <div class="widget-details">
-                       {{ tentry.fundingBody  }}
-                        <a href="{{ tentry.fundingUrl }}" class="learn-more-btn" style="color:{{tentry.fundingColor}}">
-                            Learn More 
-                            <span>
-                                <i style="color:{{tentry.fundingColor}}" class="fa-solid fa-angle-right"></i>
-                            </span>
-                        </a>    
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-
+    {{ include('snippets/FundingPillar.twig') }}
+    
         <!-- Grants by Invitation Only Text-->
         <div class="invitation-content">
             <h3>Grants by Invitation Only</h3>

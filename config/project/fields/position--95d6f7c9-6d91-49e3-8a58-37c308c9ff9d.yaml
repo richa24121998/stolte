@@ -1,0 +1,19 @@
+columnSuffix: fkdvwphm
+contentColumnType: text
+fieldGroup: c4a27789-70cd-424b-bd6b-c4b00aa93480 # About People
+handle: position
+instructions: null
+name: position
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

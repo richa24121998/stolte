@@ -1,4 +1,4 @@
-dateModified: 1684841236
+dateModified: 1684929794
 elementSources:
   craft\elements\Entry:
     -
@@ -77,6 +77,7 @@ meta:
     1ce57a2b-80b1-4cf6-bd29-23922daf35d9: 'Funding Image Caption' # Funding Image Caption
     1faa082b-b77f-41a6-9567-bd9207d91a3d: Grantees # Grantees
     2bce50ce-2855-4389-a096-7cccfe880c42: 'Grant Year' # Grant Year
+    2e8045b6-f7ff-443a-af0c-4e44c8b212eb: 'Gratee Title' # Gratee Title
     3dc340d7-d290-449d-a373-369b5c92e86c: News # News
     3f69fd89-e250-40f3-8558-ef505efbfd94: 'Funding Url' # Funding Url
     4d43fd40-00af-462c-8195-298bb85a7403: 'Funding Priorities ' # Funding Priorities 
@@ -106,6 +107,7 @@ meta:
     89a26fef-5211-426b-a4e4-664a86902217: Description # Description
     89e4f9a8-97f1-495f-a843-fabadbfc6a6c: 'Funding Pillars' # Funding Pillars
     94bbbb70-7d96-4817-a89d-e53b94c0db86: Default # Default
+    95d6f7c9-6d91-49e3-8a58-37c308c9ff9d: position # position
     0106e2c4-a900-4584-bedc-4b38e474c96c: 'Funding Priorities Quotes' # Funding Priorities Quotes
     422a5dea-9852-4728-9897-db124b040022: 'Default Meta Title' # Default Meta Title
     701d9cd9-a54c-46a1-8a88-68ca6862523f: 'Funding Small Icon' # Funding Small Icon
@@ -125,6 +127,7 @@ meta:
     634074f4-f3a5-4262-95f4-c7ad760f5dc7: Default # Default
     647043aa-d631-42fc-ab2a-7dd8116c1933: 'News & Resources Category' # News & Resources Category
     665742c3-51bb-4c48-8153-aef194693ac4: 'Stolte Family Foundation (en-US)' # Stolte Family Foundation (en-US)
+    678241bf-b17d-4ac2-86db-01677b85b493: 'Grant page Image' # Grant page Image
     8088684e-ac0d-4a9a-b60d-baf541e9ce03: 'Top Image Title' # Top Image Title
     a0b6c2b5-cccc-41fb-8da1-fbd19a9d28a9: Funding # Funding
     a0df5825-d799-4f4b-b5ae-79ea22477a30: 'Funding Priorities' # Funding Priorities

@@ -1,0 +1,19 @@
+columnSuffix: jsolekqz
+contentColumnType: text
+fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
+handle: grateeTitle
+instructions: null
+name: 'Gratee Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

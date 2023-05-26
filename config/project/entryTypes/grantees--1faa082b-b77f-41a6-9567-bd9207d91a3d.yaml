@@ -2,6 +2,7 @@ fieldLayouts:
   e8190990-dfae-4fc2-8e27-c7c3bf4d69e2:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,73 +26,49 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 44847c5d-f2ea-4888-bccf-9c50b108320f
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: a0df5825-d799-4f4b-b5ae-79ea22477a30 # Funding Priorities
+            elementCondition: null
+            fieldUid: 678241bf-b17d-4ac2-86db-01677b85b493 # Grant page Image
             instructions: null
             label: null
-            required: '1'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7049e725-ea70-441b-80ca-199821c8dadd
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 2bce50ce-2855-4389-a096-7cccfe880c42 # Grant Year
+            elementCondition: null
+            fieldUid: 2e8045b6-f7ff-443a-af0c-4e44c8b212eb # Gratee Title
             instructions: null
             label: null
-            required: '1'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a7b0e981-7016-4e6b-99c7-dec5b1a3532b
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ae12584b-abf7-40a0-8f34-a2472b88c366 # Grant Page Thumb
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 81e38d81-b9c3-4565-9dca-c4667f889c35 # Grant Popup Header
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: e8f4a024-13a0-4624-96ba-5a2411beee6a # Grant Popup Logo
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: ca74696d-15a8-4dc5-921e-3c466eca86a5 # Blurb
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
+            elementCondition: null
             fieldUid: 7cc790a0-42c6-48cc-93a9-9bfa9c369dd1 # Grant Details
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fd7f32c5-1318-4412-aa19-be98fd229b66
+            userCondition: null
             warning: null
             width: 100
         name: Grantees
-        sortOrder: 1
+        uid: ac03e557-88ec-41a0-ad79-b83ebc1faa20
+        userCondition: null
 handle: grantees
 hasTitleField: true
 name: Grantees
