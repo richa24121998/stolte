@@ -16,13 +16,16 @@
 {% extends "_layout" %}
 
 {% block content %}
-<div class="inner-padder news-entry">
-    {{ include('snippets/breadcrumbs.twig') }}
-    <article>
-        <h2>{{ entry.title }}</h2>
-        <p><b>Posted on {{ entry.postDate.format('F d, Y') }}</b></p>
-        {{ entry.body }}
-    </article>
-</div>
-{% endblock %}
+ 
+    <div class="main">
+        <div class="update-information custom-container">
+            <h3>{{ entry.title }}</h3>
+            <h6>Posted on {{ entry.postDate.format('F d, Y') }}</h6>
+            <div class="update-information-content">
+            {{ entry.body }}
+            </div>
+            
+        </div>
+    </div>
 
+{% endblock %}
