@@ -7,6 +7,8 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+
+
 *,
 ::before,
 ::after {
@@ -604,8 +606,15 @@ video {
 
 @media (min-width: 1536px) {
   .custom-container {
-    max-width: 80%;
+    max-width: 1280px;
   }
+}
+
+
+.inner-padder{
+  width: 100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 /* Custom-container End */
@@ -635,18 +644,16 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-@media (min-width: 1281px) {
+/* @media (min-width: 1281px) {
   .navbar {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-}
+} */
 
 .logo img {
   height: 3rem;
@@ -692,42 +699,41 @@ video {
   }
 }
 
-@media (min-width: 1281px) {
+/* @media (min-width: 1281px) {
   .navbar-nav .nav-item {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-}
+} */
 
 .navbar-nav .nav-item .nav-link {
   position: relative;
   display: block;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1rem;
+  padding-block: 0.5rem;
+  font-size: 14px;
   line-height: 1.5rem;
-  font-weight: 400;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   --tw-text-opacity: 1;
   color: rgb(97 149 99 / var(--tw-text-opacity));
 }
-
 .navbar-nav .nav-item .nav-link.fa-solid {
   margin-right: 0.25rem;
   padding-top: 2px;
 }
-
 .link-btn {
   display: block;
   border-width: 1px;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding:9px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 16px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -882,8 +888,8 @@ footer {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media not all and (min-width: 1024px) {
@@ -976,11 +982,12 @@ footer {
 
 .banner-section {
   display: flex;
-  height: 45vw;
+  height: 100%;
+  min-height: 620px;
   align-items: center;
   background-image: url('img/banner.png');
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   padding: 1.5rem;
 }
@@ -991,17 +998,30 @@ footer {
     padding-right: 5%;
   }
 }
-
 @media (min-width: 1281px) {
   .banner-section {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
-
+@media (min-width: 1500px) {
+  .banner-section {
+    min-height: 720px;
+  }
+}
+@media (min-width: 1601px) {
+  .banner-section {
+    min-height: 820px;
+  }
+}
 @media (min-width: 1920px) {
   .banner-section {
-    height: 40vw;
+    min-height: 950px;
+  }
+}
+@media (min-width: 2500px) {
+  .banner-section {
+    min-height: 1024px;
   }
 }
 
@@ -1024,38 +1044,41 @@ footer {
 }
 
 .banner-section .banner-content .banner-title {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 40px;
+  line-height: 1.2;
   font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 7px;
 }
 
 @media (min-width: 480px) {
   .banner-section .banner-content .banner-title {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .banner-section .banner-content .banner-title {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 42px;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1600px) {
   .banner-section .banner-content .banner-title {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner-section .banner-content .banner-title {
+    font-size: 55px;
   }
 }
 
 .banner-section .banner-content p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: none;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
@@ -1064,12 +1087,15 @@ footer {
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1600px) {
   .banner-section .banner-content p {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner-section .banner-content p {
+    font-size: 27px;
   }
 }
 
@@ -1081,15 +1107,16 @@ footer {
   .main-content .widget:nth-child(even) {
     flex-direction: row-reverse;
   }
+  .widget {
+    align-items:center;
+  }
 }
 
 .widget {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 1.25rem;
+  margin-bottom: 88px;
 }
 
 @media not all and (min-width: 768px) {
@@ -1100,8 +1127,6 @@ footer {
 
 @media (min-width: 1024px) {
   .widget {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     gap: 2.5rem;
   }
 }
@@ -1139,6 +1164,24 @@ footer {
   align-items: flex-end;
 }
 
+.widget-title.blue span{
+  color:#4D8BAA;
+  font-size: 33px;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 1400px) {
+  .widget-title.blue span {
+    font-size: 37px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .widget-title.blue span {
+    font-size: 45px;
+  }
+}
+
 .widget-title > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1147,34 +1190,33 @@ footer {
 
 .widget-title {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height:55px;
   font-weight: 500;
+  letter-spacing: 0.02em;
   --tw-text-opacity: 1;
   color: rgb(56 56 56 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
   .widget-title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 45px;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width:1600px) {
   .widget-title {
-    font-size: 3rem;
-    line-height: 1;
+    font-size:48px;
   }
 }
 
 .widget-content strong {
   position: relative;
-  margin-top: -1rem;
+  margin-top: -1.2rem;
   margin-bottom: 1.25rem;
   display: block;
-  font-size: 1.125rem;
+  font-size: 22px;
   line-height: 1.75rem;
-  font-weight: 700;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(56 56 56 / var(--tw-text-opacity));
 }
@@ -1228,19 +1270,40 @@ footer {
 }
 
 .widget-details p {
-  margin-bottom: 1rem;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-family: 'Lora';
+  display: inline;
+  font-weight: 400;
 }
-
 .learn-more-btn {
-  display: inline !important;
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
-  font-weight: 500;
+  display: inline;
+  font-size: 1rem ;
+  line-height: 1.5rem;
+  font-weight: 600;
 }
 
 .learn-more-btn:hover {
   text-decoration-line: underline;
 }
+
+@media (min-width: 1600px) {
+  .widget-details p,
+  .learn-more-btn{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .widget-details p,
+  .learn-more-btn{
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+
 
 /* invitation-content Title Start (Home Page) */
 
@@ -1250,14 +1313,14 @@ footer {
 }
 
 .invitation-content h3,
-    .update-information h3 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgb(0 90 134 / var(--tw-text-opacity));
+.update-information h3 {
+      font-size: 45px;
+      line-height: 1.3;
+      font-weight: 500;
+      --tw-text-opacity: 1;
+      color: rgb(0 90 134 / var(--tw-text-opacity));
+      text-transform: none;
 }
-
 .invitation-content p {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1265,6 +1328,19 @@ footer {
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(56 56 56 / var(--tw-text-opacity));
+  text-transform: inherit;
+}
+@media (min-width: 1600px) {
+  .invitation-content p{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .invitation-content p{
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 
 /* invitation-content Title End (Home Page) */
@@ -1273,33 +1349,30 @@ footer {
 
 .common-btn {
   position: relative;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-block: 1.1rem;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
   border-width: 1px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
   text-align: center;
   font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
+  line-height: 20px;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(56 56 56 / var(--tw-text-opacity));
   transition-duration: 300ms;
   transition-timing-function: linear;
+  letter-spacing: 0.04em;
 }
 
 .common-btn::before {
   position: absolute;
-  top: -0.5rem;
-  right: 0.5rem;
+  top: -0.3rem;
+  right: 0.3rem;
   height: 100%;
   width: 100%;
   border-width: 1px;
@@ -1311,8 +1384,8 @@ footer {
 
 .common-btn::after {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 0.3rem;
+  left: 0.3rem;
   height: 100%;
   width: 100%;
   border-width: 2px;
@@ -1330,17 +1403,9 @@ footer {
 
 @media (min-width: 480px) {
   .common-btn {
-    width: 24rem;
+    width: 440px;
   }
 }
-
-@media (min-width: 1024px) {
-  .common-btn {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-}
-
 .light-blue-btn {
   --tw-bg-opacity: 1;
   background-color: rgb(234 244 243 / var(--tw-bg-opacity));
@@ -1673,11 +1738,31 @@ footer {
 
 /* Pillar List Section Start */
 
-.pillar-list {
+/* .pillar-list {
   margin-top: 8rem;
   margin-bottom: 8rem;
+} */
+@media screen and (min-width:1600px) {
+  .pillar-list .pillar-widget .pillar-widget-content h3 a{
+    font-size: 24px;
+  }
 }
-
+@media screen and (min-width:1920px) {
+  .pillar-list .pillar-widget .pillar-widget-content h3 a{
+    font-size: 26px;
+  }
+}
+.pillar-list .pillar-widget .pillar-widget-content h3 a,
+.pillar-list .pillar-widget .pillar-widget-content p a{
+  font-family: 'Montserrat';
+  font-weight: 500!important;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+}
+.pillar-list .pillar-widget .pillar-widget-content p a{
+  font-size: 16px;
+}
 .pillar-widget {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1705,7 +1790,7 @@ footer {
 
 @media (min-width: 768px) {
   .pillar-widget .pillar_image {
-    width: 20%;
+    width: 25%;
   }
 }
 
@@ -1725,7 +1810,7 @@ footer {
 }
 
 .pillar-widget a {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
   gap: 0.5rem;
   font-size: 1.5rem;
@@ -1740,8 +1825,8 @@ footer {
 }
 
 .pillar-widget h6 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
@@ -1793,19 +1878,20 @@ footer {
 .update-information h6 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
   font-weight: 500;
+  font-size: 22px;
+  line-height:1.2;
+  letter-spacing: 0.01em;
   --tw-text-opacity: 1;
   color: rgb(56 56 56 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .update-information h6 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
+} */
 
 .update-information-content {
   margin-top: 2rem;
@@ -1829,8 +1915,9 @@ footer {
     .backdrop .connect-form  p {
   margin-bottom: 1rem;
   font-family: 'Lora';
-  font-weight: 500;
-  line-height: 1.75rem;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 16px;
 }
 
 p .update-information-content p,p 

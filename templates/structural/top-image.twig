@@ -8,7 +8,7 @@
         {% if entry.topImage|length == 1 %}
             {% for timages in entry.topImage.all() %}
                 {% set url = timages.getUrl('w1800') %}
-                <div class="banner-section single-top-image" style="background: url({{url}})">
+                <div class="banner-section single-top-image" style="background-image: url({{url}})">
                     <div class="banner-content">
                         <h2 class="banner-title">{{ title }}</h2>
                         <p>{{ caption }}</p>
@@ -23,7 +23,7 @@
                         {% for timages in entry.topImage.all() %}
                         {% set url = timages.getUrl('w1800') %}
                         <div class="swiper-slide">
-                            <div class="banner-section single-top-image" style="background: url({{url}})">
+                            <div class="banner-section single-top-image" style="background-image: url({{url}})">
                                 <div class="banner-content">
                                     <h2 class="banner-title">{{ title }}</h2>
                                     <p>{{ caption }}</p>

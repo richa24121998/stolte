@@ -13,17 +13,19 @@
         <div class="pillar-widget">
             <div class="pillar_image">
             {% if tentry.newsPreviewImage|length %}
-            <a href="{{ tentry.url }}"><img src="{{tentry.newsPreviewImage.one().getUrl('w1000')}}" /></a>
+            <a href="{{ tentry.url }}">
+                <img src="{{tentry.newsPreviewImage.one().getUrl('w1000')}}" />
+            </a>
             {% endif %}
             </div>
             <div class="pillar-widget-content">
-            <a href="{{ tentry.url }}" class="blue">{{ tentry.title }}</a>
-        </a>
-
+                <h3>
+                    <a href="{{ tentry.url }}" class="blue">{{ tentry.title }}</a>
+                </h3>
                 <h6>{{ tentry.postDate.format('F d, Y') }}</h6>
-                {{ tentry.body.getPage(1) |hacksaw(hack='words', limit='57', allow='<a>', append=",...") }}
-                <a href="{{ tentry.url }}" ><span class="learn-more">...more ></span></a>
-
+                <p>{{ tentry.body.getPage(1) |hacksaw(hack='words', limit='57', allow='<a>', append=",...") }}
+                    <a href="{{ tentry.url }}" ><span class="learn-more">...more ></span></a>
+                </p>
             </div>
         </div>
         {% endfor %}
