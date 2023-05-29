@@ -71,7 +71,7 @@ fieldLayouts:
             fieldUid: 5283a77f-4c1f-4c96-8b3f-2ad6cbfaaeb0 # Top Image Caption
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1afaf75d-aac9-4837-affd-af1d10d5d000
@@ -83,7 +83,7 @@ fieldLayouts:
             fieldUid: e4faeaa9-19a9-417a-a8b3-a379a7fb691e # Top Image
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 7390b226-868a-4f80-a249-0d8b03f0efed

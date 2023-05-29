@@ -26,6 +26,8 @@ PAGES
         {{ include('snippets/list-grantees.twig') }}
     {% case "contact-us" %}
         {{ include('snippets/contact-form.twig') }}
+    {% case "terms-and-conditions" %}
+        {{ include('snippets/terms-and-conditions.twig') }}
     {% case "news-resources" %}
         {% set showtitle = true %}
         {{ include('sections/news/index.twig') }}

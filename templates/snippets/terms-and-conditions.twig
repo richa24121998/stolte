@@ -1,0 +1,12 @@
+    <div class="main">
+    {% for tentry in craft.entries.section('generic') %}
+        <div class="update-information custom-container">
+            <h3><span>{{tentry.topImageTitle}}</span></h3>
+            <h6>{{tentry.topImageCaption}}</h6>
+            <div class="update-information-content">
+                    {{tentry.body}}
+            </div>
+            
+        </div>
+        {% endfor %}
+    </div>
