@@ -2,29 +2,44 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
 handle: grantImage
-instructions: ''
-name: 'Grant Page Thumb'
+instructions: null
+name: 'Grant Image'
 searchable: true
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds: null
+  branchLimit: null
   defaultUploadLocationSource: 'volume:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: ''
-  selectionLabel: ''
+  restrictFiles: false
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+  selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  singleUploadLocationSource: 'volume:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
-  singleUploadLocationSubpath: ''
-  source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: true
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

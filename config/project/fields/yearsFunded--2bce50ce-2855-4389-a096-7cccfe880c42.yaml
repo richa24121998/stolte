@@ -1,17 +1,17 @@
 columnSuffix: null
-contentColumnType: string
+contentColumnType: text
 fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
-handle: blurb
-instructions: ''
-name: Blurb
+handle: yearsFunded
+instructions: 'Ex : Funded Since 2021, Funded 2017 - 2019'
+name: 'Years Funded'
 searchable: true
 settings:
   byteLimit: null
-  charLimit: '150'
+  charLimit: null
   code: false
-  columnType: string
-  initialRows: '3'
-  multiline: '1'
+  columnType: null
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

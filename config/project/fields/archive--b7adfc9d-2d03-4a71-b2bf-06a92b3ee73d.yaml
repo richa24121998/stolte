@@ -1,0 +1,14 @@
+columnSuffix: kpdassci
+contentColumnType: boolean
+fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
+handle: archive
+instructions: null
+name: Archive
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

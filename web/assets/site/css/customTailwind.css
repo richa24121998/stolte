@@ -109,10 +109,10 @@
     text-transform: uppercase;
   }
 
-.banner-section{
+/* .banner-section{
     background-repeat: no-repeat !important;
     min-height: 100%;
-}
+} */
 .banner-content .banner-title, .banner-content p{
   color: #ffffff !important;
 }

@@ -1,4 +1,4 @@
-dateModified: 1685355809
+dateModified: 1685374302
 elementSources:
   craft\elements\Entry:
     -
@@ -46,7 +46,7 @@ elementSources:
     -
       key: 'section:c32f4690-71c7-4850-a667-c5d8ce9509be' # Grantees
       tableAttributes:
-        - 'field:2bce50ce-2855-4389-a096-7cccfe880c42' # Grant Year
+        - 'field:2bce50ce-2855-4389-a096-7cccfe880c42' # Years Funded
         - dateUpdated
         - link
       type: native
@@ -76,7 +76,7 @@ meta:
     1bac313a-aea4-435f-bdde-1f1d07475aa7: 'Meta Body Code' # Meta Body Code
     1ce57a2b-80b1-4cf6-bd29-23922daf35d9: 'Funding Image Caption' # Funding Image Caption
     1faa082b-b77f-41a6-9567-bd9207d91a3d: Grantees # Grantees
-    2bce50ce-2855-4389-a096-7cccfe880c42: 'Grant Year' # Grant Year
+    2bce50ce-2855-4389-a096-7cccfe880c42: 'Years Funded' # Years Funded
     2e8045b6-f7ff-443a-af0c-4e44c8b212eb: 'Gratee Title' # Gratee Title
     3dc340d7-d290-449d-a373-369b5c92e86c: News # News
     3f69fd89-e250-40f3-8558-ef505efbfd94: 'Funding Url' # Funding Url
@@ -85,8 +85,9 @@ meta:
     5b17fe86-1473-47bf-b671-672f9b069b28: Quotes # Quotes
     5bda1bff-b811-47a7-9cd8-a621caefd2c8: Area # Area
     05cd4c32-7f1c-43bf-af56-246502778d15: Quotes # Quotes
+    5eb076f9-f263-4c37-ae7e-845a9e339ade: 'Funding Priority' # Funding Priority
     6cfb5de5-8aaa-40f6-b1b6-9109ef77fa05: 'SEO Title' # SEO Title
-    7cc790a0-42c6-48cc-93a9-9bfa9c369dd1: 'Grant Details' # Grant Details
+    7cc790a0-42c6-48cc-93a9-9bfa9c369dd1: 'Grant Description' # Grant Description
     7d18af95-e4ac-4eea-b3a2-54bafedf107e: 'SEO Description' # SEO Description
     8ac90515-77ee-4cba-a992-002a7647b1af: Quotes # Quotes
     9a9fdda7-802e-4aef-b5ab-8112c0607cd6: Homepage # Homepage
@@ -103,14 +104,15 @@ meta:
     55c0d7ad-80d9-42a8-be17-c37bdf832d28: 'About People' # About People
     68b2fae7-629c-40d7-9b84-7adc92b3dd67: 'Funding Description' # Funding Description
     78ea7dd1-bc0b-419e-8460-2b07daa26eea: Grantees # Grantees
-    81e38d81-b9c3-4565-9dca-c4667f889c35: 'Grant Popup Header' # Grant Popup Header
     89a26fef-5211-426b-a4e4-664a86902217: Description # Description
     89e4f9a8-97f1-495f-a843-fabadbfc6a6c: 'Funding Pillars' # Funding Pillars
     94bbbb70-7d96-4817-a89d-e53b94c0db86: Default # Default
     95d6f7c9-6d91-49e3-8a58-37c308c9ff9d: position # position
     0106e2c4-a900-4584-bedc-4b38e474c96c: 'Funding Priorities Quotes' # Funding Priorities Quotes
     422a5dea-9852-4728-9897-db124b040022: 'Default Meta Title' # Default Meta Title
+    592b9c1f-4ceb-48ce-8585-62df7e023413: 'Amount Funded' # Amount Funded
     701d9cd9-a54c-46a1-8a88-68ca6862523f: 'Funding Small Icon' # Funding Small Icon
+    1875d4fd-d505-4b08-a9d7-67d56ef1c194: Website # Website
     2170e07f-d1a5-4537-a21a-c408aab920c5: 'Most Recent Grant Year' # Most Recent Grant Year
     2371f4c3-d5dd-4ab0-82b7-6f67d8c09d6e: 'General Pages' # General Pages
     3181a656-81cc-4011-a626-8d58710bd765: 'About List' # About List
@@ -121,16 +123,16 @@ meta:
     8974cb14-350a-479b-bd4e-c05e9b206105: 'RFP Archives' # RFP Archives
     9811cd28-3e43-4b3c-b879-00551d5fa3bc: 'Funding Pillars' # Funding Pillars
     031971ca-7b05-4922-ad1e-49cd80935b19: Generic # Generic
+    80735b33-7e00-4017-8e9b-c5e9a3dc8100: 'Funding Priority' # Funding Priority
     88822b05-f874-4ee1-a128-b2510596d9a6: 'Grant Note' # Grant Note
     104901d0-f512-43a2-b9a2-86edc58ab3a3: 'Meta Config' # Meta Config
     177874b1-a29f-42f6-b433-c9023f6c7cb8: 'SEO Image' # SEO Image
     634074f4-f3a5-4262-95f4-c7ad760f5dc7: Default # Default
     647043aa-d631-42fc-ab2a-7dd8116c1933: 'News & Resources Category' # News & Resources Category
     665742c3-51bb-4c48-8153-aef194693ac4: 'Stolte Family Foundation (en-US)' # Stolte Family Foundation (en-US)
-    678241bf-b17d-4ac2-86db-01677b85b493: 'Grant page Image' # Grant page Image
     8088684e-ac0d-4a9a-b60d-baf541e9ce03: 'Top Image Title' # Top Image Title
     a0b6c2b5-cccc-41fb-8da1-fbd19a9d28a9: Funding # Funding
-    a0df5825-d799-4f4b-b5ae-79ea22477a30: 'Funding Priorities' # Funding Priorities
+    a0df5825-d799-4f4b-b5ae-79ea22477a30: 'Funding Category' # Funding Category
     a0644ef7-a1d8-4320-89f4-de089d9c7dbf: 'Funding Priorities' # Funding Priorities
     a3a4de4b-fc37-47e0-8ae8-e307eeec003e: 'Oldest Grant Year' # Oldest Grant Year
     a3dfacbf-4480-40d5-8f9f-7eea466f5305: 'Funding Priorities Title' # Funding Priorities Title
@@ -140,12 +142,13 @@ meta:
     a9991854-233c-4b2e-92fc-41b27842d279: 'Funding Title' # Funding Title
     ab97eced-2c66-43df-8866-f5604d148745: Config # Config
     acfa48a6-b069-4c5f-84c7-5a1ea4ca6278: 'Funding Image' # Funding Image
-    ae12584b-abf7-40a0-8f34-a2472b88c366: 'Grant Page Thumb' # Grant Page Thumb
+    ae12584b-abf7-40a0-8f34-a2472b88c366: 'Grant Image' # Grant Image
     b0db2ae1-b41f-47c0-a124-cf5b4efcb546: 'Funding Pillars' # Funding Pillars
     b1bbc7f0-4098-42ed-b29a-2104100ab004: 'Funding Priorities Quotes' # Funding Priorities Quotes
     b1d2e01a-d8b6-4170-93bb-a48166503c0c: 'Funding Priorities Image Quote ' # Funding Priorities Image Quote 
     b3f42d73-e532-4113-84d9-dcd339afb373: 'Funding Priorities Description' # Funding Priorities Description
     b4e85528-fab4-4546-9dcb-58f9c190ca68: Homepage # Homepage
+    b7adfc9d-2d03-4a71-b2bf-06a92b3ee73d: Archive # Archive
     b13bfecb-6ca3-49a8-a021-e52a4934c2a1: 'Funding Priorities Quote description' # Funding Priorities Quote description
     b246f6f5-aae4-4ccf-8873-79fec03eb560: 'Show on Page' # Show on Page
     b720155e-eaff-4203-8684-06596168a761: 'News & Resources' # News & Resources
@@ -159,16 +162,13 @@ meta:
     c445f056-60f1-4442-9b1d-90918da649a4: 'Funding Quote' # Funding Quote
     c677a729-ef91-49ee-b3c7-0f0f362fe4b5: Category # Category
     c8433762-3bbd-435b-ba87-6993de142681: 'News & Resources' # News & Resources
-    ca74696d-15a8-4dc5-921e-3c466eca86a5: Blurb # Blurb
     cb15365b-3b10-4537-957f-51b54752e5c7: 'Bottom Body' # Bottom Body
     ce2e3646-7cfd-4820-82cf-c64ff3ce9b78: 'Stotle Family Foundation (en-US)' # Stotle Family Foundation (en-US)
     cfa59a5b-7e7a-4118-b524-9824e2062a2b: Default # Default
     d423fdfe-3dfa-4dfa-a0e7-c6dbb0e5d153: 'RFP Archives Sub' # RFP Archives Sub
     d3204f98-cfd8-48b7-891d-9575cab3d144: 'Funding Icon' # Funding Icon
     d72415e0-6aed-4abd-8168-1a280232aed2: Image # Image
-    e4d33cd4-d979-40c1-8582-32d9bf45e2e2: 'Grant Year' # Grant Year
     e4faeaa9-19a9-417a-a8b3-a379a7fb691e: 'Top Image' # Top Image
-    e8f4a024-13a0-4624-96ba-5a2411beee6a: 'Grant Popup Logo' # Grant Popup Logo
     e39d73af-adca-4c0f-99e8-fe149328958b: 'Grant Inquiry Sub ' # Grant Inquiry Sub 
     e80763fb-469b-4bda-bc61-60a9494e30b8: 'Social Media SEO' # Social Media SEO
     eb0ac7fd-9462-45d0-a4fe-cd586678cfa2: 'Content Admin' # Content Admin
@@ -189,6 +189,10 @@ plugins:
       prependSubject: 'New message from Stolte Family Foundation'
       successFlashMessage: 'Your message has been sent.'
       toEmail: $CONTACT_FORM_EMAIL
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.0.0
   olivemenus:
     edition: standard
     enabled: true

@@ -1,0 +1,23 @@
+columnSuffix: daixuvtn
+contentColumnType: string
+fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
+handle: fundingPriority
+instructions: 'Ex : Education - Strong Systems, Education - Family Engagement'
+name: 'Funding Priority'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionLabel: null
+  showSiteMenu: true
+  source: 'group:5eb076f9-f263-4c37-ae7e-845a9e339ade' # Funding Priority
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

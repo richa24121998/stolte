@@ -62,12 +62,12 @@ permissions:
   - 'deletepeerassets:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
   - 'editpeerimages:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
   - 'createfolders:3494e64c-42b6-49c4-9e9d-8afe189c15c9' # Images
-  - 'viewcategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
-  - 'savecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
-  - 'deletecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
-  - 'viewpeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
-  - 'savepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
-  - 'deletepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2' # Grant Year
+  - 'viewcategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
+  - 'savecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
+  - 'deletecategories:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
+  - 'viewpeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
+  - 'savepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
+  - 'deletepeercategorydrafts:e4d33cd4-d979-40c1-8582-32d9bf45e2e2'
   - 'viewcategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
   - 'savecategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category
   - 'deletecategories:647043aa-d631-42fc-ab2a-7dd8116c1933' # News & Resources Category

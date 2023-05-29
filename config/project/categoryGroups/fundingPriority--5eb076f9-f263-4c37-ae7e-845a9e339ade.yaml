@@ -1,8 +1,9 @@
 defaultPlacement: end
 fieldLayouts:
-  9643d4dc-e763-4c9a-ae48-2fa5738e3c0b:
+  5f4e9fba-44b6-46f5-92a1-32058a16b08c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,6 +11,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,12 +27,15 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 48971e7e-2f13-44fe-ac9f-517cb1df21bb
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: grantYear
-name: 'Grant Year'
+        uid: 8e22e9bd-41e3-4462-acb0-026b687a382e
+        userCondition: null
+handle: fundingPriority
+name: 'Funding Priority'
 siteSettings:
   665742c3-51bb-4c48-8153-aef194693ac4: # Stolte Family Foundation (en-US)
     hasUrls: false
@@ -38,4 +43,4 @@ siteSettings:
     uriFormat: null
 structure:
   maxLevels: null
-  uid: 599c2736-1d02-4884-8f5e-3ae84bd74560
+  uid: f08d9663-ef7b-48ea-b979-03123db0dcdb

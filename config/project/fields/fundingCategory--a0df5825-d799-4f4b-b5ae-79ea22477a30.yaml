@@ -1,21 +1,20 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
-handle: fundingPriorities
-instructions: ''
-name: 'Funding Priorities'
+handle: fundingCategory
+instructions: null
+name: 'Funding Category'
 searchable: true
 settings:
-  multi: true
   options:
     -
       __assoc__:
         -
           - label
-          - 'Education & Early Learning'
+          - Education
         -
           - value
-          - educationEarlyLearning
+          - education
         -
           - default
           - ''
@@ -23,10 +22,10 @@ settings:
       __assoc__:
         -
           - label
-          - 'Climate & Clean Energy'
+          - Climate
         -
           - value
-          - climateCleanEnergy
+          - climate
         -
           - default
           - ''
@@ -34,24 +33,13 @@ settings:
       __assoc__:
         -
           - label
-          - 'Advocacy & Engagement'
+          - 'Civic Engagement'
         -
           - value
-          - advocacyEngagement
-        -
-          - default
-          - ''
-    -
-      __assoc__:
-        -
-          - label
-          - Other
-        -
-          - value
-          - other
+          - civic-engagement
         -
           - default
           - ''
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Checkboxes
+type: craft\fields\RadioButtons

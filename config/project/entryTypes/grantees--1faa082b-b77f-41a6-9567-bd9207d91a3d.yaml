@@ -32,37 +32,97 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 678241bf-b17d-4ac2-86db-01677b85b493 # Grant page Image
+            fieldUid: b7adfc9d-2d03-4a71-b2bf-06a92b3ee73d # Archive
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7049e725-ea70-441b-80ca-199821c8dadd
+            uid: 970a8bb0-915b-4867-be5b-f6acbf035207
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 2e8045b6-f7ff-443a-af0c-4e44c8b212eb # Gratee Title
+            fieldUid: a0df5825-d799-4f4b-b5ae-79ea22477a30 # Funding Category
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a7b0e981-7016-4e6b-99c7-dec5b1a3532b
+            uid: 7e95ae39-f4d6-4ab9-8795-d143a67ccbfb
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 7cc790a0-42c6-48cc-93a9-9bfa9c369dd1 # Grant Details
+            fieldUid: 80735b33-7e00-4017-8e9b-c5e9a3dc8100 # Funding Priority
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56f37c98-1406-448c-9c48-1a2eba268731
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ae12584b-abf7-40a0-8f34-a2472b88c366 # Grant Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e09f31c-751a-43d1-8d81-bb040486139c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7cc790a0-42c6-48cc-93a9-9bfa9c369dd1 # Grant Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: fd7f32c5-1318-4412-aa19-be98fd229b66
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 592b9c1f-4ceb-48ce-8585-62df7e023413 # Amount Funded
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f374be0c-79a0-491e-8be1-21ac0f8f1697
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2bce50ce-2855-4389-a096-7cccfe880c42 # Years Funded
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40e81b26-28fb-4967-822e-5fa8a6d1b253
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1875d4fd-d505-4b08-a9d7-67d56ef1c194 # Website
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3947ae3f-b480-4d4a-ac3d-67544854d44d
             userCondition: null
             warning: null
             width: 100

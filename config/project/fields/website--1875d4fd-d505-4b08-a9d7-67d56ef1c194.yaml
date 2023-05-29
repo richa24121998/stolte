@@ -1,0 +1,14 @@
+columnSuffix: vweqhalq
+contentColumnType: string(255)
+fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
+handle: website
+instructions: null
+name: Website
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

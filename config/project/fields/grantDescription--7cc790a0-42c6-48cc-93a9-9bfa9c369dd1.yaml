@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: text
 fieldGroup: 78ea7dd1-bc0b-419e-8460-2b07daa26eea # Grantees
-handle: grantDetails
-instructions: "h2 - orange text / \r\nh3 - dark text subtitle / \r\nh4 - light text subtitle alt, italics / \r\nh5 - dark full width background, white text"
-name: 'Grant Details'
+handle: grantDescription
+instructions: null
+name: 'Grant Description'
 searchable: true
 settings:
   availableTransforms: '*'
@@ -12,9 +12,9 @@ settings:
   configSelectionMode: choose
   defaultTransform: ''
   manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: Advanced.json
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Simple.json
   removeEmptyTags: true
   removeInlineStyles: true
   removeNbsp: true
