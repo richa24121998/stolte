@@ -3,16 +3,11 @@
 {% block content %}
 <div class="inner-padder">
     {{ include('snippets/breadcrumbs.twig') }}
-    <div id="main" class="inner-body">
-    {{entry.body}}
+    <div id="main" class="inner-body main">
+    {# {{ entry.body }} #}
     </div>
 
-    {# =========================
-    PAGES
-    ==========================#}
-    {# =========================
-PAGES
-========================== #}
+    {# ========================= PAGES ==========================#}
 {%  switch craft.app.request.getSegment(1)  %}
     {% case "about" %}
         {{ include('snippets/list-about.twig') }}
